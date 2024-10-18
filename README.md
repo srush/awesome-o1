@@ -81,3 +81,13 @@ Themselves to Think Before Speaking.” *arXiv \[Cs.CL\]*.
 Zelikman, Eric, Yuhuai Wu, Jesse Mu, and Noah D Goodman. 2022. “STaR:
 Bootstrapping Reasoning with Reasoning.” *arXiv \[Cs.LG\]*.
 <http://arxiv.org/abs/2203.14465>.
+
+Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, Xu Zhao, Min-Yen Kan, Junxian He, 
+Qizhe Xie. 2023. "Self-Evaluation Guided Beam Search for Reasoning." 
+*arXiv \[Cs.CL\]*. 
+<https://arxiv.org/abs/2305.00633>.
+
+Yuxi Xie, Anirudh Goyal, Wenyue Zheng, Min-Yen Kan, Timothy P. Lillicrap, 
+Kenji Kawaguchi, Michael Shieh. 2024. "Monte Carlo Tree Search Boosts 
+Reasoning via Iterative Preference Learning." *arXiv \[cs.AI\]*. 
+<https://arxiv.org/abs/2405.00451>.
