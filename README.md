@@ -81,3 +81,11 @@ Themselves to Think Before Speaking.” *arXiv \[Cs.CL\]*.
 Zelikman, Eric, Yuhuai Wu, Jesse Mu, and Noah D Goodman. 2022. “STaR:
 Bootstrapping Reasoning with Reasoning.” *arXiv \[Cs.LG\]*.
 <http://arxiv.org/abs/2203.14465>.
+
+Ziru Chen, Michael White, Raymond Mooney, Ali Payani, Yu Su, and Huan 
+Sun. 2024. “When is Tree Search Useful for LLM Planning? It Depends 
+on the Discriminator.” In *Proceedings of the 62nd Annual Meeting of 
+the Association for Computational Linguistics (Volume 1: Long Papers)*, 
+pages 13659–13678, Bangkok, Thailand. Association for Computational 
+Linguistics.
+<https://aclanthology.org/2024.acl-long.738>.
