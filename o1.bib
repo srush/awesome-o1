@@ -679,3 +679,25 @@
   primaryClass  = "cs.CL",
   keywords      = "o1"
 }
+
+@inproceedings{chen-etal-2024-tree,
+    title = "When is Tree Search Useful for {LLM} Planning? It Depends on the Discriminator",
+    author = "Chen, Ziru  and
+      White, Michael  and
+      Mooney, Ray  and
+      Payani, Ali  and
+      Su, Yu  and
+      Sun, Huan",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.738",
+    doi = "10.18653/v1/2024.acl-long.738",
+    pages = "13659--13678",
+    abstract = "In this paper, we examine how large language models (LLMs) solve multi-step problems under a language agent framework with three components: a generator, a discriminator, and a planning method. We investigate the practical utility of two advanced planning methods, iterative correction and tree search. We present a comprehensive analysis of how discrimination accuracy affects the overall performance of agents when using these two methods or a simpler method, re-ranking. Experiments on two tasks, text-to-SQL parsing and mathematical reasoning, show that: (1) advanced planning methods demand discriminators with at least 90{\%} accuracy to achieve significant improvements over re-ranking; (2) current LLMs{'} discrimination abilities have not met the needs of advanced planning methods to achieve such improvements; (3) with LLM-based discriminators, advanced planning methods may not adequately balance accuracy and efficiency. For example, compared to the other two methods, tree search is at least 10{--}20 times slower but leads to negligible performance gains, which hinders its real-world applications.",
+}
