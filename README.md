@@ -37,6 +37,8 @@ Baker, Teddy Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl
 Cobbe. 2023. “Let’s Verify Step by Step.” *arXiv \[Cs.LG\]*.
 <http://arxiv.org/abs/2305.20050>.
 
+Saad-Falcon, Jon, Adrian Gamarra Lafuente, Shlok Natarajan, Nahum Maru, Hristo Todorov, Etash Guha, E. Kelly Buchanan, et al. 2024. "Archon: An Architecture Search Framework for Inference-Time Techniques." *arXiv \[Cs.LG\]*. <http://arxiv.org/abs/2409.15254>.
+
 Snell, Charlie, Jaehoon Lee, Kelvin Xu, and Aviral Kumar. 2024. “Scaling
 LLM Test-Time Compute Optimally Can Be More Effective Than Scaling Model
 Parameters.” *arXiv \[Cs.LG\]*. <http://arxiv.org/abs/2408.03314>.
