@@ -23,6 +23,8 @@ This is a bibliography of papers that are presumed to be related to OpenAI's [o1
 
 * **Self-Consistency** [@Wang2022-px]
 Majority voting of LLM output improves a bit.
+* **Ask Me Anythin** [@Arora2022-ama]
+Sampling multiple LLM outputs and combining with weak supervision helps a lot.
 * **Scratchpad** [@Nye2021-bx] / **Chain-of-Thought** [@Wei2022-uj]
 Wouldn't it be cool if an LLM could talk to itself and get better?
 * **Tree-of-Thought** [@Yao2023-nw]
