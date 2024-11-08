@@ -682,7 +682,6 @@
 			\end{itemize}
 		\end{column}
 		\begin{column}{0.5\linewidth}
-			\pause
 			\begin{itemize}
 				\item[\textcolor{red}{$\boldsymbol{\times}$}] No evidence this learns to correct, plan
 				\item[\textcolor{red}{$\boldsymbol{\times}$}] Computationally inefficient search
@@ -829,7 +828,6 @@
 				\item[$\boldsymbol{\checkmark}$] Removes challenges of full learned verifier
 			\end{itemize}
 		\end{column}
-		\pause
 		\begin{column}{0.5\linewidth}
 			\begin{itemize}
 				\item[\textcolor{red}{$\boldsymbol{\times}$}] Not clear if this is enough for planning.
@@ -883,7 +881,6 @@
 			\end{tcolorbox}
 		\end{column}
 	\end{columns}
-	\blfootnote{\cite{Silver2017-bn}}
 \end{frame}
 
 \begin{frame}{Suspect 3: AlphaZero}
@@ -905,7 +902,7 @@
 	% require that. At that point I think it reduces to Rejection Sampling EM though.
 	\begin{itemize}
 		\item Iterative algorithm combining learned model + expert search with a verifier.
-		\item Generate samples using $p(\cy,\cz|\cx)$, reward model $g(\cz_t)$, and search algorithm (e.g. beam search)
+		\item Generate samples using $p(\cy,\cz|\cx)$, reward model $r(\cz_t)$, and search algorithm (e.g. beam search)
 		\item Label samples using $\Ver_x(\cy)$
 		\item Train $p(\cy,\cz|\cx)$, $r(\cz_t)$ on the labeled samples, and repeat
 	\end{itemize}
@@ -1030,7 +1027,6 @@
 				\item[$\boldsymbol{\checkmark}$] Scales to more train-time search
 			\end{itemize}
 		\end{column}
-		\pause
 		\begin{column}{0.5\linewidth}
 			\begin{itemize}
 				\item[\textcolor{red}{$\boldsymbol{\times}$}] Costly to maintain open states
@@ -1162,7 +1158,6 @@
 				\item[$\boldsymbol{\checkmark}$] Single test-time model
 			\end{itemize}
 		\end{column}
-		\pause
 		\begin{column}{0.5\linewidth}
 			\begin{itemize}
 				\item[\textcolor{red}{$\boldsymbol{\times}$}] Complex training process
@@ -1208,8 +1203,9 @@
 	\end{center}
 
 	\vspace{0.5cm}
-
-	\url{https://github.com/srush/awesome-o1}
+	\begin{center}
+		\url{https://github.com/srush/awesome-o1}
+	\end{center}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Reference}
