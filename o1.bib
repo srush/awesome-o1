@@ -2092,3 +2092,43 @@
   url       = "https://openreview.net/pdf?id=BGnm7Lo8oW",
   keywords  = "o1"
 }
+
+@ARTICLE{Arora2022-ama,
+  title         = "Ask me anything: A simple strategy for prompting language models",
+  author        = "Arora, Simran and Narayan, Avanika Narayan and Chen, Mayee F and
+                   Orr, Laurel and Guha, Neel and Bhatia, Kush and Chami, Ines Chami 
+                   and Sala, Frederic and Ré, Christopher",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Large language models (LLMs) transfer well to new tasks out-of-the-box 
+                   simply given a natural language prompt that demonstrates how to perform 
+                   the task and no additional training. Prompting is a brittle process wherein 
+                   small modifications to the prompt can cause large variations in the model 
+                   predictions, and therefore significant effort is dedicated towards designing 
+                   a painstakingly 'perfect prompt' for a task. To mitigate the high degree 
+                   of effort involved in prompt-design, we instead ask whether producing multiple 
+                   effective, yet imperfect, prompts and aggregating them can lead to a high 
+                   quality prompting strategy. Our observations motivate our proposed prompting 
+                   method, ASK ME ANYTHING (AMA). We first develop an understanding of the 
+                   effective prompt formats, finding that question-answering (QA) prompts, which 
+                   encourage open-ended generation ('Who went to the park?') tend to outperform 
+                   those that restrict the model outputs ('John went to the park. Output True 
+                   or False.'). Our approach recursively uses the LLM itself to transform task 
+                   inputs to the effective QA format. We apply the collected prompts to obtain 
+                   several noisy votes for the input's true label. We find that the prompts 
+                   can have very different accuracies and complex dependencies and thus propose 
+                   to use weak supervision, a procedure for combining the noisy predictions, 
+                   to produce the final predictions for the inputs. We evaluate AMA across 
+                   open-source model families (e.g., EleutherAI, BLOOM, OPT, and T0) and model 
+                   sizes (125M-175B parameters), demonstrating an average performance lift of 
+                   10.2\% over the few-shot baseline. This simple strategy enables the open-source 
+                   GPT-J-6B model to match and exceed the performance of few-shot GPT3-175B on 
+                   15 of 20 popular benchmarks. Averaged across these tasks, the GPT-J-6B model 
+                   outperforms few-shot GPT3-175B.",
+  month         =  "05~" # oct,
+  year          =  2022,
+  url           = "https://arxiv.org/abs/2210.02441",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+

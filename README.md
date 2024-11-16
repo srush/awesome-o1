@@ -41,6 +41,8 @@ https://youtu.be/6PEJ96k1kiw
 
 -   **Self-Consistency** ([X. Wang et al. 2022](#ref-Wang2022-px))
     Majority voting of LLM output improves a bit.
+* **Ask Me Anythin** [@Arora2022-ama]
+    Sampling multiple LLM outputs and combining with weak supervision helps a lot.
 -   **Scratchpad** ([Nye et al. 2021](#ref-Nye2021-bx)) /
     **Chain-of-Thought** ([Wei et al. 2022](#ref-Wei2022-uj)) Wouldn’t
     it be cool if an LLM could talk to itself and get better?
