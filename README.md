@@ -4,11 +4,13 @@ This is a bibliography of papers that are presumed to be related to
 OpenAI’s [o1](https://openai.com/index/learning-to-reason-with-llms/).
 
 
-## Tutorial Slides
+## Video
+
+https://youtu.be/6PEJ96k1kiw
+
+<a href="https://youtu.be/6PEJ96k1kiw"> <img src="https://github.com/user-attachments/assets/6c890bdf-8006-4d90-b822-84b413b0f248" /> </a>
 
 [o1 Tutorial Slides](https://srush.github.io/awesome-o1/o1-tutorial.pdf)
-
-<a href="https://srush.github.io/awesome-o1/o1-tutorial.pdf"> <img src="https://github.com/user-attachments/assets/6c890bdf-8006-4d90-b822-84b413b0f248" /> </a>
 
 
 
