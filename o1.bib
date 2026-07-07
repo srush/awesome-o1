@@ -1,3 +1,172 @@
+@ARTICLE{Radford2019-lx,
+  title     = "Language models are unsupervised multitask learners",
+  author    = "Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David
+               and Amodei, Dario and Sutskever, Ilya",
+  journal   = "OpenAI Blog",
+  publisher = "ceid.upatras.gr",
+  volume    =  1,
+  number    =  8,
+  pages     =  9,
+  abstract  = "… Our largest model, GPT - 2 , is a 1.5B parameter Transformer
+               that achieves state of the art results on 7 out of 8 tested lan-
+               guage modeling datasets in a zero-shot setting but still
+               underfits WebText … Correspondence to: Alec Radford . competent
+               generalists …",
+  year      =  2019,
+  url       = "https://www.ceid.upatras.gr/webpages/faculty/zaro/teaching/alg-ds/PRESENTATIONS/PAPERS/2019-Radford-et-al_Language-Models-Are-Unsupervised-Multitask-%20Learners.pdf",
+  keywords  = "Transformers;o1"
+}
+
+@ARTICLE{Brown2020-on,
+  title         = "Language Models are Few-Shot Learners",
+  author        = "Brown, Tom B and Mann, Benjamin and Ryder, Nick and Subbiah,
+                   Melanie and Kaplan, Jared and Dhariwal, Prafulla and
+                   Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and
+                   Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel
+                   and Krueger, Gretchen and Henighan, Tom and Child, Rewon and
+                   Ramesh, Aditya and Ziegler, Daniel M and Wu, Jeffrey and
+                   Winter, Clemens and Hesse, Christopher and Chen, Mark and
+                   Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess,
+                   Benjamin and Clark, Jack and Berner, Christopher and
+                   McCandlish, Sam and Radford, Alec and Sutskever, Ilya and
+                   Amodei, Dario",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Recent work has demonstrated substantial gains on many NLP
+                   tasks and benchmarks by pre-training on a large corpus of
+                   text followed by fine-tuning on a specific task. While
+                   typically task-agnostic in architecture, this method still
+                   requires task-specific fine-tuning datasets of thousands or
+                   tens of thousands of examples. By contrast, humans can
+                   generally perform a new language task from only a few
+                   examples or from simple instructions - something which
+                   current NLP systems still largely struggle to do. Here we
+                   show that scaling up language models greatly improves
+                   task-agnostic, few-shot performance, sometimes even reaching
+                   competitiveness with prior state-of-the-art fine-tuning
+                   approaches. Specifically, we train GPT-3, an autoregressive
+                   language model with 175 billion parameters, 10x more than any
+                   previous non-sparse language model, and test its performance
+                   in the few-shot setting. For all tasks, GPT-3 is applied
+                   without any gradient updates or fine-tuning, with tasks and
+                   few-shot demonstrations specified purely via text interaction
+                   with the model. GPT-3 achieves strong performance on many NLP
+                   datasets, including translation, question-answering, and
+                   cloze tasks, as well as several tasks that require on-the-fly
+                   reasoning or domain adaptation, such as unscrambling words,
+                   using a novel word in a sentence, or performing 3-digit
+                   arithmetic. At the same time, we also identify some datasets
+                   where GPT-3's few-shot learning still struggles, as well as
+                   some datasets where GPT-3 faces methodological issues related
+                   to training on large web corpora. Finally, we find that GPT-3
+                   can generate samples of news articles which human evaluators
+                   have difficulty distinguishing from articles written by
+                   humans. We discuss broader societal impacts of this finding
+                   and of GPT-3 in general.",
+  month         =  "28~" # may,
+  year          =  2020,
+  url           = "http://arxiv.org/abs/2005.14165",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "MiniChain;o1"
+}
+
+@ARTICLE{Hoffmann2022-mn,
+  title         = "Training Compute-Optimal Large Language Models",
+  author        = "Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur
+                   and Buchatskaya, Elena and Cai, Trevor and Rutherford, Eliza
+                   and de Las Casas, Diego and Hendricks, Lisa Anne and Welbl,
+                   Johannes and Clark, Aidan and Hennigan, Tom and Noland, Eric
+                   and Millican, Katie and van den Driessche, George and Damoc,
+                   Bogdan and Guy, Aurelia and Osindero, Simon and Simonyan,
+                   Karen and Elsen, Erich and Rae, Jack W and Vinyals, Oriol and
+                   Sifre, Laurent",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "We investigate the optimal model size and number of tokens
+                   for training a transformer language model under a given
+                   compute budget. We find that current large language models
+                   are significantly undertrained, a consequence of the recent
+                   focus on scaling language models whilst keeping the amount of
+                   training data constant. By training over 400 language models
+                   ranging from 70 million to over 16 billion parameters on 5 to
+                   500 billion tokens, we find that for compute-optimal
+                   training, the model size and the number of training tokens
+                   should be scaled equally: for every doubling of model size
+                   the number of training tokens should also be doubled. We test
+                   this hypothesis by training a predicted compute-optimal
+                   model, Chinchilla, that uses the same compute budget as
+                   Gopher but with 70B parameters and 4$\times$ more more data.
+                   Chinchilla uniformly and significantly outperforms Gopher
+                   (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing
+                   NLG (530B) on a large range of downstream evaluation tasks.
+                   This also means that Chinchilla uses substantially less
+                   compute for fine-tuning and inference, greatly facilitating
+                   downstream usage. As a highlight, Chinchilla reaches a
+                   state-of-the-art average accuracy of 67.5\% on the MMLU
+                   benchmark, greater than a 7\% improvement over Gopher.",
+  month         =  "29~" # mar,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2203.15556",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@MISC{OpenAI2024-jh,
+  title        = "Learning to Reason with {LLMs}",
+  author       = "{OpenAI}",
+  abstract     = "We are introducing OpenAI o1, a new large language model
+                  trained with reinforcement learning to perform complex
+                  reasoning. o1 thinks before it answers—it can produce a long
+                  internal chain of thought before responding to the user.",
+  year         =  2024,
+  howpublished = "\url{https://openai.com/index/learning-to-reason-with-llms/}",
+  note         = "Accessed: 2024-10-29",
+  keywords     = "o1",
+  language     = "en"
+}
+
+@ARTICLE{Singh2023-eb,
+  title         = "Beyond human data: Scaling self-training for problem-solving
+                   with language models",
+  author        = "Singh, Avi and Co-Reyes, John D and Agarwal, Rishabh and
+                   Anand, Ankesh and Patil, Piyush and Garcia, Xavier and Liu,
+                   Peter J and Harrison, James and Lee, Jaehoon and Xu, Kelvin
+                   and Parisi, Aaron and Kumar, Abhishek and Alemi, Alex and
+                   Rizkowsky, Alex and Nova, Azade and Adlam, Ben and Bohnet,
+                   Bernd and Elsayed, Gamaleldin and Sedghi, Hanie and Mordatch,
+                   Igor and Simpson, Isabelle and Gur, Izzeddin and Snoek,
+                   Jasper and Pennington, Jeffrey and Hron, Jiri and Kenealy,
+                   Kathleen and Swersky, Kevin and Mahajan, Kshiteej and Culp,
+                   Laura and Xiao, Lechao and Bileschi, Maxwell L and Constant,
+                   Noah and Novak, Roman and Liu, Rosanne and Warkentin, Tris
+                   and Qian, Yundi and Bansal, Yamini and Dyer, Ethan and
+                   Neyshabur, Behnam and Sohl-Dickstein, Jascha and Fiedel, Noah",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Fine-tuning language models~(LMs) on human-generated data
+                   remains a prevalent practice. However, the performance of
+                   such models is often limited by the quantity and diversity of
+                   high-quality human data. In this paper, we explore whether we
+                   can go beyond human data on tasks where we have access to
+                   scalar feedback, for example, on math problems where one can
+                   verify correctness. To do so, we investigate a simple
+                   self-training method based on expectation-maximization, which
+                   we call ReST$^{EM}$, where we (1) generate samples from the
+                   model and filter them using binary feedback, (2) fine-tune
+                   the model on these samples, and (3) repeat this process a few
+                   times. Testing on advanced MATH reasoning and APPS coding
+                   benchmarks using PaLM-2 models, we find that ReST$^{EM}$
+                   scales favorably with model size and significantly surpasses
+                   fine-tuning only on human data. Overall, our findings suggest
+                   self-training with feedback can substantially reduce
+                   dependence on human-generated data.",
+  month         =  "11~" # dec,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2312.06585",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
 @ARTICLE{Wang2022-px,
   title         = "Self-Consistency Improves Chain of Thought Reasoning in
                    Language Models",
@@ -98,25 +267,6 @@
   keywords      = "MiniChain;o1"
 }
 
-@ARTICLE{Radford2019-lx,
-  title     = "Language models are unsupervised multitask learners",
-  author    = "Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David
-               and Amodei, Dario and Sutskever, Ilya",
-  journal   = "OpenAI Blog",
-  publisher = "ceid.upatras.gr",
-  volume    =  1,
-  number    =  8,
-  pages     =  9,
-  abstract  = "… Our largest model, GPT - 2 , is a 1.5B parameter Transformer
-               that achieves state of the art results on 7 out of 8 tested lan-
-               guage modeling datasets in a zero-shot setting but still
-               underfits WebText … Correspondence to: Alec Radford . competent
-               generalists …",
-  year      =  2019,
-  url       = "https://www.ceid.upatras.gr/webpages/faculty/zaro/teaching/alg-ds/PRESENTATIONS/PAPERS/2019-Radford-et-al_Language-Models-Are-Unsupervised-Multitask-%20Learners.pdf",
-  keywords  = "Transformers;o1"
-}
-
 @MISC{Hendrycks2021-tt,
   title         = "Measuring Massive Multitask Language Understanding",
   author        = "Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou,
@@ -205,100 +355,6 @@
   keywords      = "o1"
 }
 
-@ARTICLE{Brown2020-on,
-  title         = "Language Models are Few-Shot Learners",
-  author        = "Brown, Tom B and Mann, Benjamin and Ryder, Nick and Subbiah,
-                   Melanie and Kaplan, Jared and Dhariwal, Prafulla and
-                   Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and
-                   Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel
-                   and Krueger, Gretchen and Henighan, Tom and Child, Rewon and
-                   Ramesh, Aditya and Ziegler, Daniel M and Wu, Jeffrey and
-                   Winter, Clemens and Hesse, Christopher and Chen, Mark and
-                   Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess,
-                   Benjamin and Clark, Jack and Berner, Christopher and
-                   McCandlish, Sam and Radford, Alec and Sutskever, Ilya and
-                   Amodei, Dario",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Recent work has demonstrated substantial gains on many NLP
-                   tasks and benchmarks by pre-training on a large corpus of
-                   text followed by fine-tuning on a specific task. While
-                   typically task-agnostic in architecture, this method still
-                   requires task-specific fine-tuning datasets of thousands or
-                   tens of thousands of examples. By contrast, humans can
-                   generally perform a new language task from only a few
-                   examples or from simple instructions - something which
-                   current NLP systems still largely struggle to do. Here we
-                   show that scaling up language models greatly improves
-                   task-agnostic, few-shot performance, sometimes even reaching
-                   competitiveness with prior state-of-the-art fine-tuning
-                   approaches. Specifically, we train GPT-3, an autoregressive
-                   language model with 175 billion parameters, 10x more than any
-                   previous non-sparse language model, and test its performance
-                   in the few-shot setting. For all tasks, GPT-3 is applied
-                   without any gradient updates or fine-tuning, with tasks and
-                   few-shot demonstrations specified purely via text interaction
-                   with the model. GPT-3 achieves strong performance on many NLP
-                   datasets, including translation, question-answering, and
-                   cloze tasks, as well as several tasks that require on-the-fly
-                   reasoning or domain adaptation, such as unscrambling words,
-                   using a novel word in a sentence, or performing 3-digit
-                   arithmetic. At the same time, we also identify some datasets
-                   where GPT-3's few-shot learning still struggles, as well as
-                   some datasets where GPT-3 faces methodological issues related
-                   to training on large web corpora. Finally, we find that GPT-3
-                   can generate samples of news articles which human evaluators
-                   have difficulty distinguishing from articles written by
-                   humans. We discuss broader societal impacts of this finding
-                   and of GPT-3 in general.",
-  month         =  "28~" # may,
-  year          =  2020,
-  url           = "http://arxiv.org/abs/2005.14165",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "MiniChain;o1"
-}
-
-@ARTICLE{Hoffmann2022-mn,
-  title         = "Training Compute-Optimal Large Language Models",
-  author        = "Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur
-                   and Buchatskaya, Elena and Cai, Trevor and Rutherford, Eliza
-                   and de Las Casas, Diego and Hendricks, Lisa Anne and Welbl,
-                   Johannes and Clark, Aidan and Hennigan, Tom and Noland, Eric
-                   and Millican, Katie and van den Driessche, George and Damoc,
-                   Bogdan and Guy, Aurelia and Osindero, Simon and Simonyan,
-                   Karen and Elsen, Erich and Rae, Jack W and Vinyals, Oriol and
-                   Sifre, Laurent",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "We investigate the optimal model size and number of tokens
-                   for training a transformer language model under a given
-                   compute budget. We find that current large language models
-                   are significantly undertrained, a consequence of the recent
-                   focus on scaling language models whilst keeping the amount of
-                   training data constant. By training over 400 language models
-                   ranging from 70 million to over 16 billion parameters on 5 to
-                   500 billion tokens, we find that for compute-optimal
-                   training, the model size and the number of training tokens
-                   should be scaled equally: for every doubling of model size
-                   the number of training tokens should also be doubled. We test
-                   this hypothesis by training a predicted compute-optimal
-                   model, Chinchilla, that uses the same compute budget as
-                   Gopher but with 70B parameters and 4$\times$ more more data.
-                   Chinchilla uniformly and significantly outperforms Gopher
-                   (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing
-                   NLG (530B) on a large range of downstream evaluation tasks.
-                   This also means that Chinchilla uses substantially less
-                   compute for fine-tuning and inference, greatly facilitating
-                   downstream usage. As a highlight, Chinchilla reaches a
-                   state-of-the-art average accuracy of 67.5\% on the MMLU
-                   benchmark, greater than a 7\% improvement over Gopher.",
-  month         =  "29~" # mar,
-  year          =  2022,
-  url           = "http://arxiv.org/abs/2203.15556",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
 @MISC{Sutton2019-my,
   title     = "The Bitter Lesson",
   author    = "Sutton, R",
@@ -307,56 +363,6 @@
   year      =  2019,
   url       = "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
   keywords  = "o1"
-}
-
-@MISC{OpenAI2024-jh,
-  title        = "Learning to Reason with {LLMs}",
-  author       = "{OpenAI}",
-  abstract     = "We are introducing OpenAI o1, a new large language model
-                  trained with reinforcement learning to perform complex
-                  reasoning. o1 thinks before it answers—it can produce a long
-                  internal chain of thought before responding to the user.",
-  year         =  2024,
-  howpublished = "\url{https://openai.com/index/learning-to-reason-with-llms/}",
-  note         = "Accessed: 2024-10-29",
-  keywords     = "o1",
-  language     = "en"
-}
-
-@ARTICLE{Feng2023-sz,
-  title         = "Alphazero-like tree-search can guide large language model
-                   decoding and training",
-  author        = "Feng, Xidong and Wan, Ziyu and Wen, Muning and McAleer,
-                   Stephen Marcus and Wen, Ying and Zhang, Weinan and Wang, Jun",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Recent works like Tree-of-Thought (ToT) and Reasoning via
-                   Planning (RAP) aim to augment the reasoning capabilities of
-                   LLMs by using tree-search algorithms to guide multi-step
-                   reasoning. These methods rely on prompting a pre-trained
-                   model to serve as a value function and focus on problems with
-                   low search depth. As a result, these methods will not work in
-                   domains where the pre-trained LLM does not have enough
-                   knowledge to serve as an effective value function or in
-                   domains that require long-horizon planning. To address these
-                   limitations, we present an AlphaZero-like tree-search
-                   learning framework for LLMs (termed TS-LLM), systematically
-                   illustrating how tree-search with a learned value function
-                   can guide LLM decoding. TS-LLM distinguishes itself in two
-                   key ways. (1) Leveraging a learned value function and
-                   AlphaZero-like algorithms, our approach can be generally
-                   adaptable to a wide range of tasks, language models of any
-                   size, and tasks of varying search depths. (2) Our approach
-                   can guide LLMs during both inference and training,
-                   iteratively improving the LLM. Empirical results across
-                   reasoning, planning, alignment, and decision-making tasks
-                   show that TS-LLM outperforms existing approaches and can
-                   handle trees with a depth of 64.",
-  month         =  "29~" # sep,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2309.17179",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
 }
 
 @ARTICLE{Wang2023-ur,
@@ -395,46 +401,1297 @@
   keywords      = "o1"
 }
 
-@ARTICLE{Singh2023-eb,
-  title         = "Beyond human data: Scaling self-training for problem-solving
-                   with language models",
-  author        = "Singh, Avi and Co-Reyes, John D and Agarwal, Rishabh and
-                   Anand, Ankesh and Patil, Piyush and Garcia, Xavier and Liu,
-                   Peter J and Harrison, James and Lee, Jaehoon and Xu, Kelvin
-                   and Parisi, Aaron and Kumar, Abhishek and Alemi, Alex and
-                   Rizkowsky, Alex and Nova, Azade and Adlam, Ben and Bohnet,
-                   Bernd and Elsayed, Gamaleldin and Sedghi, Hanie and Mordatch,
-                   Igor and Simpson, Isabelle and Gur, Izzeddin and Snoek,
-                   Jasper and Pennington, Jeffrey and Hron, Jiri and Kenealy,
-                   Kathleen and Swersky, Kevin and Mahajan, Kshiteej and Culp,
-                   Laura and Xiao, Lechao and Bileschi, Maxwell L and Constant,
-                   Noah and Novak, Roman and Liu, Rosanne and Warkentin, Tris
-                   and Qian, Yundi and Bansal, Yamini and Dyer, Ethan and
-                   Neyshabur, Behnam and Sohl-Dickstein, Jascha and Fiedel, Noah",
+@ARTICLE{Feng2023-sz,
+  title         = "Alphazero-like tree-search can guide large language model
+                   decoding and training",
+  author        = "Feng, Xidong and Wan, Ziyu and Wen, Muning and McAleer,
+                   Stephen Marcus and Wen, Ying and Zhang, Weinan and Wang, Jun",
   journal       = "arXiv [cs.LG]",
-  abstract      = "Fine-tuning language models~(LMs) on human-generated data
-                   remains a prevalent practice. However, the performance of
-                   such models is often limited by the quantity and diversity of
-                   high-quality human data. In this paper, we explore whether we
-                   can go beyond human data on tasks where we have access to
-                   scalar feedback, for example, on math problems where one can
-                   verify correctness. To do so, we investigate a simple
-                   self-training method based on expectation-maximization, which
-                   we call ReST$^{EM}$, where we (1) generate samples from the
-                   model and filter them using binary feedback, (2) fine-tune
-                   the model on these samples, and (3) repeat this process a few
-                   times. Testing on advanced MATH reasoning and APPS coding
-                   benchmarks using PaLM-2 models, we find that ReST$^{EM}$
-                   scales favorably with model size and significantly surpasses
-                   fine-tuning only on human data. Overall, our findings suggest
-                   self-training with feedback can substantially reduce
-                   dependence on human-generated data.",
-  month         =  "11~" # dec,
+  abstract      = "Recent works like Tree-of-Thought (ToT) and Reasoning via
+                   Planning (RAP) aim to augment the reasoning capabilities of
+                   LLMs by using tree-search algorithms to guide multi-step
+                   reasoning. These methods rely on prompting a pre-trained
+                   model to serve as a value function and focus on problems with
+                   low search depth. As a result, these methods will not work in
+                   domains where the pre-trained LLM does not have enough
+                   knowledge to serve as an effective value function or in
+                   domains that require long-horizon planning. To address these
+                   limitations, we present an AlphaZero-like tree-search
+                   learning framework for LLMs (termed TS-LLM), systematically
+                   illustrating how tree-search with a learned value function
+                   can guide LLM decoding. TS-LLM distinguishes itself in two
+                   key ways. (1) Leveraging a learned value function and
+                   AlphaZero-like algorithms, our approach can be generally
+                   adaptable to a wide range of tasks, language models of any
+                   size, and tasks of varying search depths. (2) Our approach
+                   can guide LLMs during both inference and training,
+                   iteratively improving the LLM. Empirical results across
+                   reasoning, planning, alignment, and decision-making tasks
+                   show that TS-LLM outperforms existing approaches and can
+                   handle trees with a depth of 64.",
+  month         =  "29~" # sep,
   year          =  2023,
-  url           = "http://arxiv.org/abs/2312.06585",
+  url           = "http://arxiv.org/abs/2309.17179",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1;On-Policy Distillation"
+}
+
+@MISC{Paul-G-Allen-School2024-da,
+  title     = "Parables on the Power of Planning in {AI}: From Poker to
+               Diplomacy: Noam Brown ({OpenAI})",
+  author    = "{Paul G. Allen School}",
+  publisher = "Youtube",
+  abstract  = "Title: Parables on the Power of Planning in AI: From Poker to
+               DiplomacySpeaker: Noam Brown (OpenAI)Date: Thursday, May 23,
+               2024Abstract: from Deep Blue in 19...",
+  month     =  "17~" # sep,
+  year      =  2024,
+  url       = "https://www.youtube.com/watch?v=eaAonE58sLU",
+  keywords  = "Paul G. Allen School of Computer Science \& Engineering;
+               University of Washington;o1"
+}
+
+@ARTICLE{Silver2016-ag,
+  title     = "Mastering the game of Go with deep neural networks and tree
+               search",
+  author    = "Silver, David and Huang, Aja and Maddison, Chris J and Guez,
+               Arthur and Sifre, Laurent and van den Driessche, George and
+               Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam,
+               Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik
+               and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and
+               Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray
+               and Graepel, Thore and Hassabis, Demis",
+  journal   = "Nature",
+  publisher = "Nature Publishing Group",
+  volume    =  529,
+  number    =  7587,
+  pages     = "484--489",
+  abstract  = "The game of Go has long been viewed as the most challenging of
+               classic games for artificial intelligence owing to its enormous
+               search space and the difficulty of evaluating board positions and
+               moves. Here we introduce a new approach to computer Go that uses
+               'value networks' to evaluate board positions and 'policy
+               networks' to select moves. These deep neural networks are trained
+               by a novel combination of supervised learning from human expert
+               games, and reinforcement learning from games of self-play.
+               Without any lookahead search, the neural networks play Go at the
+               level of state-of-the-art Monte Carlo tree search programs that
+               simulate thousands of random games of self-play. We also
+               introduce a new search algorithm that combines Monte Carlo
+               simulation with value and policy networks. Using this search
+               algorithm, our program AlphaGo achieved a 99.8\% winning rate
+               against other Go programs, and defeated the human European Go
+               champion by 5 games to 0. This is the first time that a computer
+               program has defeated a human professional player in the
+               full-sized game of Go, a feat previously thought to be at least a
+               decade away.",
+  month     =  "28~" # jan,
+  year      =  2016,
+  url       = "https://www.nature.com/articles/nature16961",
+  keywords  = "o1",
+  language  = "en"
+}
+
+@ARTICLE{Welleck2024-yr,
+  title         = "From decoding to meta-generation: Inference-time algorithms
+                   for large language models",
+  author        = "Welleck, Sean and Bertsch, Amanda and Finlayson, Matthew and
+                   Schoelkopf, Hailey and Xie, Alex and Neubig, Graham and
+                   Kulikov, Ilia and Harchaoui, Zaid",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "One of the most striking findings in modern research on large
+                   language models (LLMs) is that scaling up compute during
+                   training leads to better results. However, less attention has
+                   been given to the benefits of scaling compute during
+                   inference. This survey focuses on these inference-time
+                   approaches. We explore three areas under a unified
+                   mathematical formalism: token-level generation algorithms,
+                   meta-generation algorithms, and efficient generation.
+                   Token-level generation algorithms, often called decoding
+                   algorithms, operate by sampling a single token at a time or
+                   constructing a token-level search space and then selecting an
+                   output. These methods typically assume access to a language
+                   model's logits, next-token distributions, or probability
+                   scores. Meta-generation algorithms work on partial or full
+                   sequences, incorporating domain knowledge, enabling
+                   backtracking, and integrating external information. Efficient
+                   generation methods aim to reduce token costs and improve the
+                   speed of generation. Our survey unifies perspectives from
+                   three research communities: traditional natural language
+                   processing, modern LLMs, and machine learning systems.",
+  month         =  "24~" # jun,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2406.16838",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Jones2021-di,
+  title         = "Scaling scaling laws with board games",
+  author        = "Jones, Andy L",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "The largest experiments in machine learning now require
+                   resources far beyond the budget of all but a few
+                   institutions. Fortunately, it has recently been shown that
+                   the results of these huge experiments can often be
+                   extrapolated from the results of a sequence of far smaller,
+                   cheaper experiments. In this work, we show that not only can
+                   the extrapolation be done based on the size of the model, but
+                   on the size of the problem as well. By conducting a sequence
+                   of experiments using AlphaZero and Hex, we show that the
+                   performance achievable with a fixed amount of compute
+                   degrades predictably as the game gets larger and harder.
+                   Along with our main result, we further show that the
+                   test-time and train-time compute available to an agent can be
+                   traded off while maintaining performance.",
+  month         =  "7~" # apr,
+  year          =  2021,
+  url           = "http://arxiv.org/abs/2104.03113",
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   keywords      = "o1"
+}
+
+@INPROCEEDINGS{Brown2017-of,
+  title     = "Libratus: The superhuman {AI} for no-limit poker",
+  author    = "Brown, Noam and Sandholm, Tuomas",
+  booktitle = "Proceedings of the Twenty-Sixth International Joint Conference on
+               Artificial Intelligence",
+  publisher = "International Joint Conferences on Artificial Intelligence
+               Organization",
+  address   = "California",
+  abstract  = "No-limit Texas Hold'em is the most popular variant of poker in
+               the world. Heads-up no-limit Texas Hold'em is the main benchmark
+               challenge for AI in imperfect-information games. We present
+               Libratus, the first - and so far only - AI to defeat top human
+               professionals in that game. Libratus's architecture features
+               three main modules, each of which has new algorithms:
+               pre-computing a solution to an abstraction of the game which
+               provides a high-level blueprint for the strategy of the AI, a new
+               nested subgame-solving algorithm which repeatedly calculates a
+               more detailed strategy as play progresses, and a self-improving
+               module which augments the pre-computed blueprint over time.",
+  month     =  aug,
+  year      =  2017,
+  url       = "https://www.onlinecasinoground.nl/wp-content/uploads/2018/10/Libratus-super-human-no-limit-poker-Sandholm-Brown.pdf",
+  keywords  = "o1"
+}
+
+@ARTICLE{Brown2024-bs,
+  title         = "Large language monkeys: Scaling inference compute with
+                   repeated sampling",
+  author        = "Brown, Bradley and Juravsky, Jordan and Ehrlich, Ryan and
+                   Clark, Ronald and Le, Quoc V and Ré, Christopher and
+                   Mirhoseini, Azalia",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Scaling the amount of compute used to train language models
+                   has dramatically improved their capabilities. However, when
+                   it comes to inference, we often limit the amount of compute
+                   to only one attempt per problem. Here, we explore inference
+                   compute as another axis for scaling by increasing the number
+                   of generated samples. Across multiple tasks and models, we
+                   observe that coverage - the fraction of problems solved by
+                   any attempt - scales with the number of samples over four
+                   orders of magnitude. In domains like coding and formal
+                   proofs, where all answers can be automatically verified,
+                   these increases in coverage directly translate into improved
+                   performance. When we apply repeated sampling to SWE-bench
+                   Lite, the fraction of issues solved with
+                   DeepSeek-V2-Coder-Instruct increases from 15.9\% with one
+                   sample to 56\% with 250 samples, outperforming the
+                   single-attempt state-of-the-art of 43\% which uses more
+                   capable frontier models. Moreover, using current API pricing,
+                   amplifying the cheaper DeepSeek model with five samples is
+                   more cost-effective and solves more issues than paying a
+                   premium for one sample from GPT-4o or Claude 3.5 Sonnet.
+                   Interestingly, the relationship between coverage and the
+                   number of samples is often log-linear and can be modelled
+                   with an exponentiated power law, suggesting the existence of
+                   inference-time scaling laws. Finally, we find that
+                   identifying correct samples out of many generations remains
+                   an important direction for future research in domains without
+                   automatic verifiers. When solving math word problems from
+                   GSM8K and MATH, coverage with Llama-3 models grows to over
+                   95\% with 10,000 samples. However, common methods to pick
+                   correct solutions from a sample collection, such as majority
+                   voting or reward models, plateau beyond several hundred
+                   samples and fail to fully scale with the sample budget.",
+  month         =  "31~" # jul,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2407.21787",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@MISC{UnknownUnknown-rm,
+  title        = "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+  howpublished = "\url{https://arxiv.org/html/2408.15240v1}",
+  note         = "Accessed: 2024-11-6",
+  keywords     = "o1",
+  language     = "en"
+}
+
+@ARTICLE{Gandhi2024-vs,
+  title         = "Stream of search ({SoS}): Learning to search in language",
+  author        = "Gandhi, Kanishk and Lee, Denise and Grand, Gabriel and Liu,
+                   Muxin and Cheng, Winson and Sharma, Archit and Goodman, Noah
+                   D",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Language models are rarely shown fruitful mistakes while
+                   training. They then struggle to look beyond the next token,
+                   suffering from a snowballing of errors and struggling to
+                   predict the consequence of their actions several steps ahead.
+                   In this paper, we show how language models can be taught to
+                   search by representing the process of search in language, as
+                   a flattened string -- a stream of search (SoS). We propose a
+                   unified language for search that captures an array of
+                   different symbolic search strategies. We demonstrate our
+                   approach using the simple yet difficult game of Countdown,
+                   where the goal is to combine input numbers with arithmetic
+                   operations to reach a target number. We pretrain a
+                   transformer-based language model from scratch on a dataset of
+                   streams of search generated by heuristic solvers. We find
+                   that SoS pretraining increases search accuracy by 25\% over
+                   models trained to predict only the optimal search trajectory.
+                   We further finetune this model with two policy improvement
+                   methods: Advantage-Induced Policy Alignment (APA) and
+                   Self-Taught Reasoner (STaR). The finetuned SoS models solve
+                   36\% of previously unsolved problems, including problems that
+                   cannot be solved by any of the heuristic solvers. Our results
+                   indicate that language models can learn to solve problems via
+                   search, self-improve to flexibly use different search
+                   strategies, and potentially discover new ones.",
+  month         =  "1~" # apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.03683",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@INPROCEEDINGS{Yoshida2024-bs,
+  title     = "{MAP’s} not dead yet: Uncovering true language model modes by
+               conditioning away degeneracy",
+  author    = "Yoshida, Davis and Goyal, Kartik and Gimpel, Kevin",
+  booktitle = "Proceedings of the 62nd Annual Meeting of the Association for
+               Computational Linguistics (Volume 1: Long Papers)",
+  publisher = "Association for Computational Linguistics",
+  address   = "Stroudsburg, PA, USA",
+  pages     = "16164--16215",
+  abstract  = "Davis Yoshida, Kartik Goyal, Kevin Gimpel. Proceedings of the
+               62nd Annual Meeting of the Association for Computational
+               Linguistics (Volume 1: Long Papers). 2024.",
+  year      =  2024,
+  url       = "https://aclanthology.org/2024.acl-long.855.pdf",
+  keywords  = "o1"
+}
+
+@ARTICLE{Lightman2023-cr,
+  title         = "Let's verify step by step",
+  author        = "Lightman, Hunter and Kosaraju, Vineet and Burda, Yura and
+                   Edwards, Harri and Baker, Bowen and Lee, Teddy and Leike, Jan
+                   and Schulman, John and Sutskever, Ilya and Cobbe, Karl",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "In recent years, large language models have greatly improved
+                   in their ability to perform complex multi-step reasoning.
+                   However, even state-of-the-art models still regularly produce
+                   logical mistakes. To train more reliable models, we can turn
+                   either to outcome supervision, which provides feedback for a
+                   final result, or process supervision, which provides feedback
+                   for each intermediate reasoning step. Given the importance of
+                   training reliable models, and given the high cost of human
+                   feedback, it is important to carefully compare the both
+                   methods. Recent work has already begun this comparison, but
+                   many questions still remain. We conduct our own
+                   investigation, finding that process supervision significantly
+                   outperforms outcome supervision for training models to solve
+                   problems from the challenging MATH dataset. Our
+                   process-supervised model solves 78\% of problems from a
+                   representative subset of the MATH test set. Additionally, we
+                   show that active learning significantly improves the efficacy
+                   of process supervision. To support related research, we also
+                   release PRM800K, the complete dataset of 800,000 step-level
+                   human feedback labels used to train our best reward model.",
+  month         =  "31~" # may,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2305.20050",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Uesato2022-aw,
+  title         = "Solving math word problems with process- and outcome-based
+                   feedback",
+  author        = "Uesato, Jonathan and Kushman, Nate and Kumar, Ramana and
+                   Song, Francis and Siegel, Noah and Wang, Lisa and Creswell,
+                   Antonia and Irving, Geoffrey and Higgins, Irina",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Recent work has shown that asking language models to generate
+                   reasoning steps improves performance on many reasoning tasks.
+                   When moving beyond prompting, this raises the question of how
+                   we should supervise such models: outcome-based approaches
+                   which supervise the final result, or process-based approaches
+                   which supervise the reasoning process itself? Differences
+                   between these approaches might naturally be expected not just
+                   in final-answer errors but also in reasoning errors, which
+                   can be difficult to detect and are problematic in many
+                   real-world domains such as education. We run the first
+                   comprehensive comparison between process- and outcome-based
+                   approaches trained on a natural language task, GSM8K. We find
+                   that pure outcome-based supervision produces similar
+                   final-answer error rates with less label supervision.
+                   However, for correct reasoning steps we find it necessary to
+                   use process-based supervision or supervision from learned
+                   reward models that emulate process-based feedback. In total,
+                   we improve the previous best results from 16.8\% $\to$ 12.7\%
+                   final-answer error and 14.0\% $\to$ 3.4\% reasoning error
+                   among final-answer-correct solutions.",
+  month         =  "25~" # nov,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2211.14275",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Kirchner2024-cu,
+  title         = "Prover-Verifier Games improve legibility of {LLM} outputs",
+  author        = "Kirchner, Jan Hendrik and Chen, Yining and Edwards, Harri and
+                   Leike, Jan and McAleese, Nat and Burda, Yuri",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "One way to increase confidence in the outputs of Large
+                   Language Models (LLMs) is to support them with reasoning that
+                   is clear and easy to check -- a property we call legibility.
+                   We study legibility in the context of solving grade-school
+                   math problems and show that optimizing chain-of-thought
+                   solutions only for answer correctness can make them less
+                   legible. To mitigate the loss in legibility, we propose a
+                   training algorithm inspired by Prover-Verifier Game from Anil
+                   et al. (2021). Our algorithm iteratively trains small
+                   verifiers to predict solution correctness, ``helpful''
+                   provers to produce correct solutions that the verifier
+                   accepts, and ``sneaky'' provers to produce incorrect
+                   solutions that fool the verifier. We find that the helpful
+                   prover's accuracy and the verifier's robustness to
+                   adversarial attacks increase over the course of training.
+                   Furthermore, we show that legibility training transfers to
+                   time-constrained humans tasked with verifying solution
+                   correctness. Over course of LLM training human accuracy
+                   increases when checking the helpful prover's solutions, and
+                   decreases when checking the sneaky prover's solutions. Hence,
+                   training for checkability by small verifiers is a plausible
+                   technique for increasing output legibility. Our results
+                   suggest legibility training against small verifiers as a
+                   practical avenue for increasing legibility of large LLMs to
+                   humans, and thus could help with alignment of superhuman
+                   models.",
+  month         =  "18~" # jul,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2407.13692",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Zelikman2022-id,
+  title         = "{STaR}: Bootstrapping reasoning with reasoning",
+  author        = "Zelikman, Eric and Wu, Yuhuai and Mu, Jesse and Goodman, Noah
+                   D",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Generating step-by-step ``chain-of-thought'' rationales
+                   improves language model performance on complex reasoning
+                   tasks like mathematics or commonsense question-answering.
+                   However, inducing language model rationale generation
+                   currently requires either constructing massive rationale
+                   datasets or sacrificing accuracy by using only few-shot
+                   inference. We propose a technique to iteratively leverage a
+                   small number of rationale examples and a large dataset
+                   without rationales, to bootstrap the ability to perform
+                   successively more complex reasoning. This technique, the
+                   ``Self-Taught Reasoner'' (STaR), relies on a simple loop:
+                   generate rationales to answer many questions, prompted with a
+                   few rationale examples; if the generated answers are wrong,
+                   try again to generate a rationale given the correct answer;
+                   fine-tune on all the rationales that ultimately yielded
+                   correct answers; repeat. We show that STaR significantly
+                   improves performance on multiple datasets compared to a model
+                   fine-tuned to directly predict final answers, and performs
+                   comparably to fine-tuning a 30$\times$ larger
+                   state-of-the-art language model on CommensenseQA. Thus, STaR
+                   lets a model improve itself by learning from its own
+                   generated reasoning.",
+  month         =  "27~" # mar,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2203.14465",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Wu2024-px,
+  title         = "Thinking {LLMs}: General instruction following with thought
+                   generation",
+  author        = "Wu, Tianhao and Lan, Janice and Yuan, Weizhe and Jiao,
+                   Jiantao and Weston, Jason and Sukhbaatar, Sainbayar",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "LLMs are typically trained to answer user questions or follow
+                   instructions similarly to how human experts respond. However,
+                   in the standard alignment framework they lack the basic
+                   ability of explicit thinking before answering. Thinking is
+                   important for complex questions that require reasoning and
+                   planning -- but can be applied to any task. We propose a
+                   training method for equipping existing LLMs with such
+                   thinking abilities for general instruction following without
+                   use of additional human data. We achieve this by an iterative
+                   search and optimization procedure that explores the space of
+                   possible thought generations, allowing the model to learn how
+                   to think without direct supervision. For each instruction,
+                   the thought candidates are scored using a judge model to
+                   evaluate their responses only, and then optimized via
+                   preference optimization. We show that this procedure leads to
+                   superior performance on AlpacaEval and Arena-Hard, and shows
+                   gains from thinking on non-reasoning categories such as
+                   marketing, health and general knowledge, in addition to more
+                   traditional reasoning \& problem-solving tasks.",
+  month         =  "14~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.10630",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Zelikman2024-cu,
+  title         = "Quiet-{STaR}: Language models can teach themselves to think
+                   before speaking",
+  author        = "Zelikman, Eric and Harik, Georges and Shao, Yijia and
+                   Jayasiri, Varuna and Haber, Nick and Goodman, Noah D",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "When writing and talking, people sometimes pause to think.
+                   Although reasoning-focused works have often framed reasoning
+                   as a method of answering questions or completing agentic
+                   tasks, reasoning is implicit in almost all written text. For
+                   example, this applies to the steps not stated between the
+                   lines of a proof or to the theory of mind underlying a
+                   conversation. In the Self-Taught Reasoner (STaR, Zelikman et
+                   al. 2022), useful thinking is learned by inferring rationales
+                   from few-shot examples in question-answering and learning
+                   from those that lead to a correct answer. This is a highly
+                   constrained setting -- ideally, a language model could
+                   instead learn to infer unstated rationales in arbitrary text.
+                   We present Quiet-STaR, a generalization of STaR in which LMs
+                   learn to generate rationales at each token to explain future
+                   text, improving their predictions. We address key challenges,
+                   including 1) the computational cost of generating
+                   continuations, 2) the fact that the LM does not initially
+                   know how to generate or use internal thoughts, and 3) the
+                   need to predict beyond individual next tokens. To resolve
+                   these, we propose a tokenwise parallel sampling algorithm,
+                   using learnable tokens indicating a thought's start and end,
+                   and an extended teacher-forcing technique. Encouragingly,
+                   generated rationales disproportionately help model
+                   difficult-to-predict tokens and improve the LM's ability to
+                   directly answer difficult questions. In particular, after
+                   continued pretraining of an LM on a corpus of internet text
+                   with Quiet-STaR, we find zero-shot improvements on GSM8K
+                   (5.9\%$\rightarrow$10.9\%) and CommonsenseQA
+                   (36.3\%$\rightarrow$47.2\%) and observe a perplexity
+                   improvement of difficult tokens in natural text. Crucially,
+                   these improvements require no fine-tuning on these tasks.
+                   Quiet-STaR marks a step towards LMs that can learn to reason
+                   in a more general and scalable way.",
+  month         =  "14~" # mar,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2403.09629",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Snell2024-dx,
+  title         = "Scaling {LLM} test-time compute optimally can be more
+                   effective than scaling model parameters",
+  author        = "Snell, Charlie and Lee, Jaehoon and Xu, Kelvin and Kumar,
+                   Aviral",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Enabling LLMs to improve their outputs by using more
+                   test-time computation is a critical step towards building
+                   generally self-improving agents that can operate on
+                   open-ended natural language. In this paper, we study the
+                   scaling of inference-time computation in LLMs, with a focus
+                   on answering the question: if an LLM is allowed to use a
+                   fixed but non-trivial amount of inference-time compute, how
+                   much can it improve its performance on a challenging prompt?
+                   Answering this question has implications not only on the
+                   achievable performance of LLMs, but also on the future of LLM
+                   pretraining and how one should tradeoff inference-time and
+                   pre-training compute. Despite its importance, little research
+                   attempted to understand the scaling behaviors of various
+                   test-time inference methods. Moreover, current work largely
+                   provides negative results for a number of these strategies.
+                   In this work, we analyze two primary mechanisms to scale
+                   test-time computation: (1) searching against dense,
+                   process-based verifier reward models; and (2) updating the
+                   model's distribution over a response adaptively, given the
+                   prompt at test time. We find that in both cases, the
+                   effectiveness of different approaches to scaling test-time
+                   compute critically varies depending on the difficulty of the
+                   prompt. This observation motivates applying a
+                   ``compute-optimal'' scaling strategy, which acts to most
+                   effectively allocate test-time compute adaptively per prompt.
+                   Using this compute-optimal strategy, we can improve the
+                   efficiency of test-time compute scaling by more than 4x
+                   compared to a best-of-N baseline. Additionally, in a
+                   FLOPs-matched evaluation, we find that on problems where a
+                   smaller base model attains somewhat non-trivial success
+                   rates, test-time compute can be used to outperform a 14x
+                   larger model.",
+  month         =  "6~" # aug,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2408.03314",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Kumar2024-fj,
+  title         = "Training language models to self-correct via reinforcement
+                   learning",
+  author        = "Kumar, Aviral and Zhuang, Vincent and Agarwal, Rishabh and
+                   Su, Yi and Co-Reyes, John D and Singh, Avi and Baumli, Kate
+                   and Iqbal, Shariq and Bishop, Colton and Roelofs, Rebecca and
+                   Zhang, Lei M and McKinney, Kay and Shrivastava, Disha and
+                   Paduraru, Cosmin and Tucker, George and Precup, Doina and
+                   Behbahani, Feryal and Faust, Aleksandra",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Self-correction is a highly desirable capability of large
+                   language models (LLMs), yet it has consistently been found to
+                   be largely ineffective in modern LLMs. Current methods for
+                   training self-correction typically depend on either multiple
+                   models, a more advanced model, or additional forms of
+                   supervision. To address these shortcomings, we develop a
+                   multi-turn online reinforcement learning (RL) approach,
+                   SCoRe, that significantly improves an LLM's self-correction
+                   ability using entirely self-generated data. To build SCoRe,
+                   we first show that variants of supervised fine-tuning (SFT)
+                   on offline model-generated correction traces are often
+                   insufficient for instilling self-correction behavior. In
+                   particular, we observe that training via SFT falls prey to
+                   either a distribution mismatch between mistakes made by the
+                   data-collection policy and the model's own responses, or to
+                   behavior collapse, where learning implicitly prefers only a
+                   certain mode of correction behavior that is often not
+                   effective at self-correction on test problems. SCoRe
+                   addresses these challenges by training under the model's own
+                   distribution of self-generated correction traces and using
+                   appropriate regularization to steer the learning process into
+                   learning a self-correction behavior that is effective at test
+                   time as opposed to fitting high-reward responses for a given
+                   prompt. This regularization process includes an initial phase
+                   of multi-turn RL on a base model to generate a policy
+                   initialization that is less susceptible to collapse, followed
+                   by using a reward bonus to amplify self-correction. With
+                   Gemini 1.0 Pro and 1.5 Flash models, we find that SCoRe
+                   achieves state-of-the-art self-correction performance,
+                   improving the base models' self-correction by 15.6\% and
+                   9.1\% respectively on MATH and HumanEval.",
+  month         =  "19~" # sep,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2409.12917",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Cobbe2021-gt,
+  title         = "Training verifiers to solve math word problems",
+  author        = "Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and
+                   Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert,
+                   Matthias and Tworek, Jerry and Hilton, Jacob and Nakano,
+                   Reiichiro and Hesse, Christopher and Schulman, John",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "State-of-the-art language models can match human performance
+                   on many tasks, but they still struggle to robustly perform
+                   multi-step mathematical reasoning. To diagnose the failures
+                   of current models and support research, we introduce GSM8K, a
+                   dataset of 8.5K high quality linguistically diverse grade
+                   school math word problems. We find that even the largest
+                   transformer models fail to achieve high test performance,
+                   despite the conceptual simplicity of this problem
+                   distribution. To increase performance, we propose training
+                   verifiers to judge the correctness of model completions. At
+                   test time, we generate many candidate solutions and select
+                   the one ranked highest by the verifier. We demonstrate that
+                   verification significantly improves performance on GSM8K, and
+                   we provide strong empirical evidence that verification scales
+                   more effectively with increased data than a finetuning
+                   baseline.",
+  month         =  "27~" # oct,
+  year          =  2021,
+  url           = "http://arxiv.org/abs/2110.14168",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Kazemnejad2024-cp,
+  title         = "{VinePPO}: Unlocking {RL} potential for {LLM} reasoning
+                   through refined credit assignment",
+  author        = "Kazemnejad, Amirhossein and Aghajohari, Milad and Portelance,
+                   Eva and Sordoni, Alessandro and Reddy, Siva and Courville,
+                   Aaron and Roux, Nicolas Le",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Large language models (LLMs) are increasingly applied to
+                   complex reasoning tasks that require executing several
+                   complex steps before receiving any reward. Properly assigning
+                   credit to these steps is essential for enhancing model
+                   performance. Proximal Policy Optimization (PPO), a
+                   state-of-the-art reinforcement learning (RL) algorithm used
+                   for LLM finetuning, employs value networks to tackle credit
+                   assignment. However, value networks face challenges in
+                   predicting the expected cumulative rewards accurately in
+                   complex reasoning tasks, often leading to high-variance
+                   updates and suboptimal performance. In this work, we
+                   systematically evaluate the efficacy of value networks and
+                   reveal their significant shortcomings in reasoning-heavy LLM
+                   tasks, showing that they barely outperform a random baseline
+                   when comparing alternative steps. To address this, we propose
+                   VinePPO, a straightforward approach that leverages the
+                   flexibility of language environments to compute unbiased
+                   Monte Carlo-based estimates, bypassing the need for large
+                   value networks. Our method consistently outperforms PPO and
+                   other RL-free baselines across MATH and GSM8K datasets with
+                   fewer gradient updates (up to 9x), less wall-clock time (up
+                   to 3.0x). These results emphasize the importance of accurate
+                   credit assignment in RL finetuning of LLM and demonstrate
+                   VinePPO's potential as a superior alternative.",
+  month         =  "2~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.01679",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Wu2024-mt,
+  title         = "Inference scaling laws: An empirical analysis of
+                   compute-optimal inference for problem-solving with language
+                   models",
+  author        = "Wu, Yangzhen and Sun, Zhiqing and Li, Shanda and Welleck,
+                   Sean and Yang, Yiming",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "While the scaling laws of large language models (LLMs)
+                   training have been extensively studied, optimal inference
+                   configurations of LLMs remain underexplored. We study
+                   inference scaling laws and compute-optimal inference,
+                   focusing on the trade-offs between model sizes and generating
+                   additional tokens with different inference strategies. As a
+                   first step towards understanding and designing
+                   compute-optimal inference methods, we studied
+                   cost-performance trade-offs for inference strategies such as
+                   greedy search, majority voting, best-of-$n$, weighted voting,
+                   and two different tree search algorithms, using different
+                   model sizes and compute budgets. Our findings indicate
+                   smaller models (e.g., Llemma-7B) can outperform larger models
+                   given the same computation budgets, and that smaller models
+                   paired with advanced inference algorithms yield
+                   Pareto-optimal cost-performance trade-offs. For instance, the
+                   Llemma-7B model, equipped with our novel tree search
+                   algorithm, consistently outperforms Llemma-34B with standard
+                   majority voting on the MATH benchmark across all FLOPs
+                   budgets. We hope these findings contribute to a broader
+                   understanding of inference scaling laws for LLMs.",
+  month         =  "1~" # aug,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2408.00724",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  keywords      = "o1"
+}
+
+@ARTICLE{Wang2024-xv,
+  title         = "Mixture-of-agents enhances large language model capabilities",
+  author        = "Wang, Junlin and Wang, Jue and Athiwaratkun, Ben and Zhang,
+                   Ce and Zou, James",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Recent advances in large language models (LLMs) demonstrate
+                   substantial capabilities in natural language understanding
+                   and generation tasks. With the growing number of LLMs, how to
+                   harness the collective expertise of multiple LLMs is an
+                   exciting open direction. Toward this goal, we propose a new
+                   approach that leverages the collective strengths of multiple
+                   LLMs through a Mixture-of-Agents (MoA) methodology. In our
+                   approach, we construct a layered MoA architecture wherein
+                   each layer comprises multiple LLM agents. Each agent takes
+                   all the outputs from agents in the previous layer as
+                   auxiliary information in generating its response. MoA models
+                   achieves state-of-art performance on AlpacaEval 2.0, MT-Bench
+                   and FLASK, surpassing GPT-4 Omni. For example, our MoA using
+                   only open-source LLMs is the leader of AlpacaEval 2.0 by a
+                   substantial gap, achieving a score of 65.1\% compared to
+                   57.5\% by GPT-4 Omni.",
+  month         =  "7~" # jun,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2406.04692",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Su2024-us,
+  title         = "Dualformer: Controllable fast and slow thinking by learning
+                   with randomized reasoning traces",
+  author        = "Su, Dijia and Sukhbaatar, Sainbayar and Rabbat, Michael and
+                   Tian, Yuandong and Zheng, Qinqing",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "In human cognition theory, human thinking is governed by two
+                   systems: the fast and intuitive System 1 and the slower but
+                   more deliberative System 2. Recent studies have shown that
+                   incorporating System 2 process into Transformers including
+                   large language models (LLMs), significantly enhances their
+                   reasoning capabilities. Nevertheless, models that purely
+                   resemble System 2 thinking require substantially higher
+                   computational costs and are much slower to respond. To
+                   address this challenge, we present Dualformer, a single
+                   Transformer model that seamlessly integrates both the fast
+                   and slow reasoning modes. Dualformer is obtained by training
+                   on data with randomized reasoning traces, where different
+                   parts of the traces are dropped during training. The dropping
+                   strategies are specifically tailored according to the trace
+                   structure, analogous to analyzing our thinking process and
+                   creating shortcuts with patterns. At inference time, our
+                   model can be configured to output only the solutions (fast
+                   mode) or both the reasoning chain and the final solution
+                   (slow mode), or automatically decide which mode to engage
+                   (auto mode). In all cases, Dualformer outperforms the
+                   corresponding baseline models in both performance and
+                   computational efficiency: (1) in slow mode, Dualformer
+                   optimally solves unseen 30 x 30 maze navigation tasks 97.6\%
+                   of the time, surpassing the Searchformer (trained on data
+                   with complete reasoning traces) baseline performance of
+                   93.3\%, while only using 45.5\% fewer reasoning steps; (2) in
+                   fast mode, Dualformer completes those tasks with an 80\%
+                   optimal rate, significantly outperforming the Solution-Only
+                   model (trained on solution-only data), which has an optimal
+                   rate of only 30\%. For math problems, our techniques have
+                   also achieved improved performance with LLM fine-tuning,
+                   showing its generalization beyond task-specific models.",
+  month         =  "13~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.09918",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  keywords      = "o1"
+}
+
+@ARTICLE{Silver2017-bn,
+  title         = "Mastering chess and shogi by self-play with a general
+                   reinforcement learning algorithm",
+  author        = "Silver, David and Hubert, Thomas and Schrittwieser, Julian
+                   and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and
+                   Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and
+                   Graepel, Thore and Lillicrap, Timothy and Simonyan, Karen and
+                   Hassabis, Demis",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "The game of chess is the most widely-studied domain in the
+                   history of artificial intelligence. The strongest programs
+                   are based on a combination of sophisticated search
+                   techniques, domain-specific adaptations, and handcrafted
+                   evaluation functions that have been refined by human experts
+                   over several decades. In contrast, the AlphaGo Zero program
+                   recently achieved superhuman performance in the game of Go,
+                   by tabula rasa reinforcement learning from games of
+                   self-play. In this paper, we generalise this approach into a
+                   single AlphaZero algorithm that can achieve, tabula rasa,
+                   superhuman performance in many challenging domains. Starting
+                   from random play, and given no domain knowledge except the
+                   game rules, AlphaZero achieved within 24 hours a superhuman
+                   level of play in the games of chess and shogi (Japanese
+                   chess) as well as Go, and convincingly defeated a
+                   world-champion program in each case.",
+  month         =  "5~" # dec,
+  year          =  2017,
+  url           = "http://arxiv.org/abs/1712.01815",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  keywords      = "o1"
+}
+
+@ARTICLE{Gulcehre2023-vk,
+  title         = "Reinforced Self-training ({ReST}) for language modeling",
+  author        = "Gulcehre, Caglar and Paine, Tom Le and Srinivasan, Srivatsan
+                   and Konyushkova, Ksenia and Weerts, Lotte and Sharma,
+                   Abhishek and Siddhant, Aditya and Ahern, Alex and Wang,
+                   Miaosen and Gu, Chenjie and Macherey, Wolfgang and Doucet,
+                   Arnaud and Firat, Orhan and de Freitas, Nando",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Reinforcement learning from human feedback (RLHF) can improve
+                   the quality of large language model's (LLM) outputs by
+                   aligning them with human preferences. We propose a simple
+                   algorithm for aligning LLMs with human preferences inspired
+                   by growing batch reinforcement learning (RL), which we call
+                   Reinforced Self-Training (ReST). Given an initial LLM policy,
+                   ReST produces a dataset by generating samples from the
+                   policy, which are then used to improve the LLM policy using
+                   offline RL algorithms. ReST is more efficient than typical
+                   online RLHF methods because the training dataset is produced
+                   offline, which allows data reuse. While ReST is a general
+                   approach applicable to all generative learning settings, we
+                   focus on its application to machine translation. Our results
+                   show that ReST can substantially improve translation quality,
+                   as measured by automated metrics and human evaluation on
+                   machine translation benchmarks in a compute and
+                   sample-efficient manner.",
+  month         =  "17~" # aug,
+  year          =  2023,
+  url           = "https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=7hwJ2ckAAAAJ:evX43VCCuoAC",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1;On-Policy Distillation"
+}
+
+@INPROCEEDINGS{Yarowsky1995-tm,
+  title     = "Unsupervised word sense disambiguation rivaling supervised
+               methods",
+  author    = "Yarowsky, David",
+  booktitle = "Proceedings of the 33rd annual meeting on Association for
+               Computational Linguistics -",
+  publisher = "Association for Computational Linguistics",
+  address   = "Morristown, NJ, USA",
+  abstract  = "This paper presents an unsupervised learning algorithm for sense
+               disambiguation that, when trained on unannotated English text,
+               rivals the performance of supervised techniques that require
+               time-consuming hand annotations. The algorithm is based on two
+               powerful constraints---that words tend to have one sense per
+               discourse and one sense per collocation---exploited in an
+               iterative bootstrapping procedure. Tested accuracy exceeds 96\%.",
+  year      =  1995,
+  url       = "https://dl.acm.org/doi/10.3115/981658.981684",
+  keywords  = "o1"
+}
+
+@ARTICLE{Nakano2021-iz,
+  title         = "{WebGPT}: Browser-assisted question-answering with human
+                   feedback",
+  author        = "Nakano, Reiichiro and Hilton, Jacob and Balaji, Suchir and
+                   Wu, Jeff and Ouyang, Long and Kim, Christina and Hesse,
+                   Christopher and Jain, Shantanu and Kosaraju, Vineet and
+                   Saunders, William and Jiang, Xu and Cobbe, Karl and Eloundou,
+                   Tyna and Krueger, Gretchen and Button, Kevin and Knight,
+                   Matthew and Chess, Benjamin and Schulman, John",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "We fine-tune GPT-3 to answer long-form questions using a
+                   text-based web-browsing environment, which allows the model
+                   to search and navigate the web. By setting up the task so
+                   that it can be performed by humans, we are able to train
+                   models on the task using imitation learning, and then
+                   optimize answer quality with human feedback. To make human
+                   evaluation of factual accuracy easier, models must collect
+                   references while browsing in support of their answers. We
+                   train and evaluate our models on ELI5, a dataset of questions
+                   asked by Reddit users. Our best model is obtained by
+                   fine-tuning GPT-3 using behavior cloning, and then performing
+                   rejection sampling against a reward model trained to predict
+                   human preferences. This model's answers are preferred by
+                   humans 56\% of the time to those of our human demonstrators,
+                   and 69\% of the time to the highest-voted answer from Reddit.",
+  month         =  "17~" # dec,
+  year          =  2021,
+  url           = "http://arxiv.org/abs/2112.09332",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Yao2023-nw,
+  title         = "Tree of thoughts: Deliberate problem solving with large
+                   language models",
+  author        = "Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak
+                   and Griffiths, Thomas L and Cao, Yuan and Narasimhan, Karthik",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Language models are increasingly being deployed for general
+                   problem solving across a wide range of tasks, but are still
+                   confined to token-level, left-to-right decision-making
+                   processes during inference. This means they can fall short in
+                   tasks that require exploration, strategic lookahead, or where
+                   initial decisions play a pivotal role. To surmount these
+                   challenges, we introduce a new framework for language model
+                   inference, Tree of Thoughts (ToT), which generalizes over the
+                   popular Chain of Thought approach to prompting language
+                   models, and enables exploration over coherent units of text
+                   (thoughts) that serve as intermediate steps toward problem
+                   solving. ToT allows LMs to perform deliberate decision making
+                   by considering multiple different reasoning paths and
+                   self-evaluating choices to decide the next course of action,
+                   as well as looking ahead or backtracking when necessary to
+                   make global choices. Our experiments show that ToT
+                   significantly enhances language models' problem-solving
+                   abilities on three novel tasks requiring non-trivial planning
+                   or search: Game of 24, Creative Writing, and Mini Crosswords.
+                   For instance, in Game of 24, while GPT-4 with
+                   chain-of-thought prompting only solved 4\% of tasks, our
+                   method achieved a success rate of 74\%. Code repo with all
+                   prompts:
+                   https://github.com/princeton-nlp/tree-of-thought-llm.",
+  month         =  "17~" # may,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2305.10601",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Nye2021-bx,
+  title         = "Show your work: Scratchpads for intermediate computation with
+                   language models",
+  author        = "Nye, Maxwell and Andreassen, Anders Johan and Gur-Ari, Guy
+                   and Michalewski, Henryk and Austin, Jacob and Bieber, David
+                   and Dohan, David and Lewkowycz, Aitor and Bosma, Maarten and
+                   Luan, David and Sutton, Charles and Odena, Augustus",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Large pre-trained language models perform remarkably well on
+                   tasks that can be done ``in one pass'', such as generating
+                   realistic text or synthesizing computer programs. However,
+                   they struggle with tasks that require unbounded multi-step
+                   computation, such as adding integers or executing programs.
+                   Surprisingly, we find that these same models are able to
+                   perform complex multi-step computations -- even in the
+                   few-shot regime -- when asked to perform the operation ``step
+                   by step'', showing the results of intermediate computations.
+                   In particular, we train transformers to perform multi-step
+                   computations by asking them to emit intermediate computation
+                   steps into a ``scratchpad''. On a series of increasingly
+                   complex tasks ranging from long addition to the execution of
+                   arbitrary programs, we show that scratchpads dramatically
+                   improve the ability of language models to perform multi-step
+                   computations.",
+  month         =  "30~" # nov,
+  year          =  2021,
+  url           = "http://arxiv.org/abs/2112.00114",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Anthony2017-dm,
+  title         = "Thinking fast and slow with deep learning and tree search",
+  author        = "Anthony, Thomas and Tian, Zheng and Barber, David",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "Sequential decision making problems, such as structured
+                   prediction, robotic control, and game playing, require a
+                   combination of planning policies and generalisation of those
+                   plans. In this paper, we present Expert Iteration (ExIt), a
+                   novel reinforcement learning algorithm which decomposes the
+                   problem into separate planning and generalisation tasks.
+                   Planning new policies is performed by tree search, while a
+                   deep neural network generalises those plans. Subsequently,
+                   tree search is improved by using the neural network policy to
+                   guide search, increasing the strength of new plans. In
+                   contrast, standard deep Reinforcement Learning algorithms
+                   rely on a neural network not only to generalise plans, but to
+                   discover them too. We show that ExIt outperforms REINFORCE
+                   for training a neural network to play the board game Hex, and
+                   our final tree search agent, trained tabula rasa, defeats
+                   MoHex 1.0, the most recent Olympiad Champion player to be
+                   publicly released.",
+  month         =  "23~" # may,
+  year          =  2017,
+  url           = "http://arxiv.org/abs/1705.08439",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  keywords      = "o1"
+}
+
+@ARTICLE{Setlur2024-ax,
+  title         = "Rewarding progress: Scaling automated process verifiers for
+                   {LLM} reasoning",
+  author        = "Setlur, Amrith and Nagpal, Chirag and Fisch, Adam and Geng,
+                   Xinyang and Eisenstein, Jacob and Agarwal, Rishabh and
+                   Agarwal, Alekh and Berant, Jonathan and Kumar, Aviral",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "A promising approach for improving reasoning in large
+                   language models is to use process reward models (PRMs). PRMs
+                   provide feedback at each step of a multi-step reasoning
+                   trace, potentially improving credit assignment over outcome
+                   reward models (ORMs) that only provide feedback at the final
+                   step. However, collecting dense, per-step human labels is not
+                   scalable, and training PRMs from automatically-labeled data
+                   has thus far led to limited gains. To improve a base policy
+                   by running search against a PRM or using it as dense rewards
+                   for reinforcement learning (RL), we ask: ``How should we
+                   design process rewards?''. Our key insight is that, to be
+                   effective, the process reward for a step should measure
+                   progress: a change in the likelihood of producing a correct
+                   response in the future, before and after taking the step,
+                   corresponding to the notion of step-level advantages in RL.
+                   Crucially, this progress should be measured under a prover
+                   policy distinct from the base policy. We theoretically
+                   characterize the set of good provers and our results show
+                   that optimizing process rewards from such provers improves
+                   exploration during test-time search and online RL. In fact,
+                   our characterization shows that weak prover policies can
+                   substantially improve a stronger base policy, which we also
+                   observe empirically. We validate our claims by training
+                   process advantage verifiers (PAVs) to predict progress under
+                   such provers, and show that compared to ORMs, test-time
+                   search against PAVs is $>8\%$ more accurate, and
+                   $1.5-5\times$ more compute-efficient. Online RL with dense
+                   rewards from PAVs enables one of the first results with
+                   $5-6\times$ gain in sample efficiency, and $>6\%$ gain in
+                   accuracy, over ORMs.",
+  month         =  "10~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.08146",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1;On-Policy Distillation"
+}
+
+@ARTICLE{Chen2024-xg,
+  title         = "When is tree search useful for {LLM} planning? It depends on
+                   the discriminator",
+  author        = "Chen, Ziru and White, Michael and Mooney, Raymond and Payani,
+                   Ali and Su, Yu and Sun, Huan",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "In this paper, we examine how large language models (LLMs)
+                   solve multi-step problems under a language agent framework
+                   with three components: a generator, a discriminator, and a
+                   planning method. We investigate the practical utility of two
+                   advanced planning methods, iterative correction and tree
+                   search. We present a comprehensive analysis of how
+                   discrimination accuracy affects the overall performance of
+                   agents when using these two methods or a simpler method,
+                   re-ranking. Experiments on two tasks, text-to-SQL parsing and
+                   mathematical reasoning, show that: (1) advanced planning
+                   methods demand discriminators with at least 90\% accuracy to
+                   achieve significant improvements over re-ranking; (2) current
+                   LLMs' discrimination abilities have not met the needs of
+                   advanced planning methods to achieve such improvements; (3)
+                   with LLM-based discriminators, advanced planning methods may
+                   not adequately balance accuracy and efficiency. For example,
+                   compared to the other two methods, tree search is at least
+                   10--20 times slower but leads to negligible performance
+                   gains, which hinders its real-world applications. Code and
+                   data are available at
+                   https://github.com/OSU-NLP-Group/llm-planning-eval.",
+  month         =  "16~" # feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.10890",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Xie2023-ti,
+  title         = "Self-evaluation guided beam search for reasoning",
+  author        = "Xie, Yuxi and Kawaguchi, Kenji and Zhao, Yiran and Zhao, Xu
+                   and Kan, Min-Yen and He, Junxian and Xie, Qizhe",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Breaking down a problem into intermediate steps has
+                   demonstrated impressive performance in Large Language Model
+                   (LLM) reasoning. However, the growth of the reasoning chain
+                   introduces uncertainty and error accumulation, making it
+                   challenging to elicit accurate final results. To tackle this
+                   challenge of uncertainty in multi-step reasoning, we
+                   introduce a stepwise self-evaluation mechanism to guide and
+                   calibrate the reasoning process of LLMs. We propose a
+                   decoding algorithm integrating the self-evaluation guidance
+                   via stochastic beam search. The self-evaluation guidance
+                   serves as a better-calibrated automatic criterion,
+                   facilitating an efficient search in the reasoning space and
+                   resulting in superior prediction quality. Stochastic beam
+                   search balances exploitation and exploration of the search
+                   space with temperature-controlled randomness. Our approach
+                   surpasses the corresponding Codex-backboned baselines in
+                   few-shot accuracy by $6.34\%$, $9.56\%$, and $5.46\%$ on the
+                   GSM8K, AQuA, and StrategyQA benchmarks, respectively.
+                   Experiment results with Llama-2 on arithmetic reasoning
+                   demonstrate the efficiency of our method in outperforming the
+                   baseline methods with comparable computational budgets.
+                   Further analysis in multi-step reasoning finds our
+                   self-evaluation guidance pinpoints logic failures and leads
+                   to higher consistency and robustness. Our code is publicly
+                   available at https://guideddecoding.github.io/.",
+  month         =  "30~" # apr,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2305.00633",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  keywords      = "o1"
+}
+
+@ARTICLE{Xie2024-lp,
+  title         = "Monte Carlo Tree Search boosts reasoning via iterative
+                   preference learning",
+  author        = "Xie, Yuxi and Goyal, Anirudh and Zheng, Wenyue and Kan,
+                   Min-Yen and Lillicrap, Timothy P and Kawaguchi, Kenji and
+                   Shieh, Michael",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "We introduce an approach aimed at enhancing the reasoning
+                   capabilities of Large Language Models (LLMs) through an
+                   iterative preference learning process inspired by the
+                   successful strategy employed by AlphaZero. Our work leverages
+                   Monte Carlo Tree Search (MCTS) to iteratively collect
+                   preference data, utilizing its look-ahead ability to break
+                   down instance-level rewards into more granular step-level
+                   signals. To enhance consistency in intermediate steps, we
+                   combine outcome validation and stepwise self-evaluation,
+                   continually updating the quality assessment of newly
+                   generated data. The proposed algorithm employs Direct
+                   Preference Optimization (DPO) to update the LLM policy using
+                   this newly generated step-level preference data. Theoretical
+                   analysis reveals the importance of using on-policy sampled
+                   data for successful self-improving. Extensive evaluations on
+                   various arithmetic and commonsense reasoning tasks
+                   demonstrate remarkable performance improvements over existing
+                   models. For instance, our approach outperforms the Mistral-7B
+                   Supervised Fine-Tuning (SFT) baseline on GSM8K, MATH, and
+                   ARC-C, with substantial increases in accuracy to $81.8\%$
+                   (+$5.9\%$), $34.7\%$ (+$5.8\%$), and $76.4\%$ (+$15.8\%$),
+                   respectively. Additionally, our research delves into the
+                   training and inference compute tradeoff, providing insights
+                   into how our method effectively maximizes performance gains.
+                   Our code is publicly available at
+                   https://github.com/YuxiXie/MCTS-DPO.",
+  month         =  "1~" # may,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2405.00451",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  keywords      = "o1;On-Policy Distillation"
+}
+
+@ARTICLE{Zhao2024-jv,
+  title         = "Probabilistic inference in language models via twisted
+                   Sequential Monte Carlo",
+  author        = "Zhao, Stephen and Brekelmans, Rob and Makhzani, Alireza and
+                   Grosse, Roger",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Numerous capability and safety techniques of Large Language
+                   Models (LLMs), including RLHF, automated red-teaming, prompt
+                   engineering, and infilling, can be cast as sampling from an
+                   unnormalized target distribution defined by a given reward or
+                   potential function over the full sequence. In this work, we
+                   leverage the rich toolkit of Sequential Monte Carlo (SMC) for
+                   these probabilistic inference problems. In particular, we use
+                   learned twist functions to estimate the expected future value
+                   of the potential at each timestep, which enables us to focus
+                   inference-time computation on promising partial sequences. We
+                   propose a novel contrastive method for learning the twist
+                   functions, and establish connections with the rich literature
+                   of soft reinforcement learning. As a complementary
+                   application of our twisted SMC framework, we present methods
+                   for evaluating the accuracy of language model inference
+                   techniques using novel bidirectional SMC bounds on the log
+                   partition function. These bounds can be used to estimate the
+                   KL divergence between the inference and target distributions
+                   in both directions. We apply our inference evaluation
+                   techniques to show that twisted SMC is effective for sampling
+                   undesirable outputs from a pretrained model (a useful
+                   component of harmlessness training and automated
+                   red-teaming), generating reviews with varied sentiment, and
+                   performing infilling tasks.",
+  month         =  "26~" # apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.17546",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords      = "o1"
+}
+
+@ARTICLE{Putta2024-yy,
+  title         = "Agent {Q}: Advanced reasoning and learning for autonomous
+                   {AI} agents",
+  author        = "Putta, Pranav and Mills, Edmund and Garg, Naman and Motwani,
+                   Sumeet and Finn, Chelsea and Garg, Divyansh and Rafailov,
+                   Rafael",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "Large Language Models (LLMs) have shown remarkable
+                   capabilities in natural language tasks requiring complex
+                   reasoning, yet their application in agentic, multi-step
+                   reasoning within interactive environments remains a difficult
+                   challenge. Traditional supervised pre-training on static
+                   datasets falls short in enabling autonomous agent
+                   capabilities needed to perform complex decision-making in
+                   dynamic settings like web navigation. Previous attempts to
+                   bridge this ga-through supervised fine-tuning on curated
+                   expert demonstrations-often suffer from compounding errors
+                   and limited exploration data, resulting in sub-optimal policy
+                   outcomes. To overcome these challenges, we propose a
+                   framework that combines guided Monte Carlo Tree Search (MCTS)
+                   search with a self-critique mechanism and iterative
+                   fine-tuning on agent interactions using an off-policy variant
+                   of the Direct Preference Optimization (DPO) algorithm. Our
+                   method allows LLM agents to learn effectively from both
+                   successful and unsuccessful trajectories, thereby improving
+                   their generalization in complex, multi-step reasoning tasks.
+                   We validate our approach in the WebShop environment-a
+                   simulated e-commerce platform where it consistently
+                   outperforms behavior cloning and reinforced fine-tuning
+                   baseline, and beats average human performance when equipped
+                   with the capability to do online search. In real-world
+                   booking scenarios, our methodology boosts Llama-3 70B model's
+                   zero-shot performance from 18.6\% to 81.7\% success rate (a
+                   340\% relative increase) after a single day of data
+                   collection and further to 95.4\% with online search. We
+                   believe this represents a substantial leap forward in the
+                   capabilities of autonomous agents, paving the way for more
+                   sophisticated and reliable decision-making in real-world
+                   settings.",
+  month         =  "13~" # aug,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2408.07199",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  keywords      = "o1"
+}
+
+@INPROCEEDINGS{Unknown2024-ba,
+  title     = "Towards Learning to Reason at Pre-Training Scale",
+  booktitle = "The Thirteenth International Conference on Learning
+               Representations",
+  abstract  = "Prompting a Large Language Model (LLM) to output Chain-of-Thought
+               (CoT) reasoning improves performance on complex problem-solving
+               tasks. Further, several popular approaches exist to
+               ``self-improve`` the abilities of LLMs to use CoT on tasks where
+               supervised (question, answer) datasets are available. However, an
+               emerging line of work explores whether self-improvement is
+               possible without supervised datasets, instead utilizing the same
+               large, general-purpose text corpora as used during pre-training.
+               These pre-training datasets encompass large parts of human
+               knowledge and dwarf all finetuning datasets in size.
+               Self-improving CoT abilities on such general datasets could
+               enhance reasoning for any general-purpose text generation task,
+               and doing so at pre-training scale may unlock unprecedented
+               reasoning abilities. In this paper, we outline the path towards
+               self-improving CoT reasoning at pre-training scale and address
+               fundamental challenges in this direction. We start by framing
+               this as a reinforcement learning problem: given the first $n$
+               tokens from a large pre-training corpus, the model generates a
+               CoT and receives a reward based on how well the CoT helps predict
+               the following $m$ tokens. We then investigate a fundamental
+               question: What constitutes a suitable reward function for
+               learning to reason during general language modelling? We outline
+               the desirable qualities of such a reward function and empirically
+               demonstrate how different functions affect what reasoning is
+               learnt and where reasoning is rewarded. Using these insights, we
+               introduce a novel reward function called Reasoning Advantage (RA)
+               that facilitates self-improving CoT reasoning on free-form
+               question-answering (QA) data, where answers are unstructured and
+               difficult to verify. Equipped with a suitable reward function, we
+               explore the optimization of it on general-purpose text using
+               offline RL. Our analysis indicates that future work should
+               investigate more powerful optimisation algorithms, potentially
+               moving towards more online algorithms that better explore the
+               space of CoT generations.",
+  month     =  "4~" # oct,
+  year      =  2024,
+  url       = "https://openreview.net/pdf?id=BGnm7Lo8oW",
+  keywords  = "o1"
 }
 
 @ARTICLE{Zhang2024-tq,
@@ -834,1261 +2091,4 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CL",
   keywords      = "o1"
-}
-
-@MISC{Paul-G-Allen-School2024-da,
-  title     = "Parables on the Power of Planning in {AI}: From Poker to
-               Diplomacy: Noam Brown ({OpenAI})",
-  author    = "{Paul G. Allen School}",
-  publisher = "Youtube",
-  abstract  = "Title: Parables on the Power of Planning in AI: From Poker to
-               DiplomacySpeaker: Noam Brown (OpenAI)Date: Thursday, May 23,
-               2024Abstract: from Deep Blue in 19...",
-  month     =  "17~" # sep,
-  year      =  2024,
-  url       = "https://www.youtube.com/watch?v=eaAonE58sLU",
-  keywords  = "Paul G. Allen School of Computer Science \& Engineering;
-               University of Washington;o1"
-}
-
-@ARTICLE{Silver2016-ag,
-  title     = "Mastering the game of Go with deep neural networks and tree
-               search",
-  author    = "Silver, David and Huang, Aja and Maddison, Chris J and Guez,
-               Arthur and Sifre, Laurent and van den Driessche, George and
-               Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam,
-               Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik
-               and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and
-               Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray
-               and Graepel, Thore and Hassabis, Demis",
-  journal   = "Nature",
-  publisher = "Nature Publishing Group",
-  volume    =  529,
-  number    =  7587,
-  pages     = "484--489",
-  abstract  = "The game of Go has long been viewed as the most challenging of
-               classic games for artificial intelligence owing to its enormous
-               search space and the difficulty of evaluating board positions and
-               moves. Here we introduce a new approach to computer Go that uses
-               'value networks' to evaluate board positions and 'policy
-               networks' to select moves. These deep neural networks are trained
-               by a novel combination of supervised learning from human expert
-               games, and reinforcement learning from games of self-play.
-               Without any lookahead search, the neural networks play Go at the
-               level of state-of-the-art Monte Carlo tree search programs that
-               simulate thousands of random games of self-play. We also
-               introduce a new search algorithm that combines Monte Carlo
-               simulation with value and policy networks. Using this search
-               algorithm, our program AlphaGo achieved a 99.8\% winning rate
-               against other Go programs, and defeated the human European Go
-               champion by 5 games to 0. This is the first time that a computer
-               program has defeated a human professional player in the
-               full-sized game of Go, a feat previously thought to be at least a
-               decade away.",
-  month     =  "28~" # jan,
-  year      =  2016,
-  url       = "https://www.nature.com/articles/nature16961",
-  keywords  = "o1",
-  language  = "en"
-}
-
-@ARTICLE{Jones2021-di,
-  title         = "Scaling scaling laws with board games",
-  author        = "Jones, Andy L",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "The largest experiments in machine learning now require
-                   resources far beyond the budget of all but a few
-                   institutions. Fortunately, it has recently been shown that
-                   the results of these huge experiments can often be
-                   extrapolated from the results of a sequence of far smaller,
-                   cheaper experiments. In this work, we show that not only can
-                   the extrapolation be done based on the size of the model, but
-                   on the size of the problem as well. By conducting a sequence
-                   of experiments using AlphaZero and Hex, we show that the
-                   performance achievable with a fixed amount of compute
-                   degrades predictably as the game gets larger and harder.
-                   Along with our main result, we further show that the
-                   test-time and train-time compute available to an agent can be
-                   traded off while maintaining performance.",
-  month         =  "7~" # apr,
-  year          =  2021,
-  url           = "http://arxiv.org/abs/2104.03113",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Brown2024-bs,
-  title         = "Large language monkeys: Scaling inference compute with
-                   repeated sampling",
-  author        = "Brown, Bradley and Juravsky, Jordan and Ehrlich, Ryan and
-                   Clark, Ronald and Le, Quoc V and Ré, Christopher and
-                   Mirhoseini, Azalia",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Scaling the amount of compute used to train language models
-                   has dramatically improved their capabilities. However, when
-                   it comes to inference, we often limit the amount of compute
-                   to only one attempt per problem. Here, we explore inference
-                   compute as another axis for scaling by increasing the number
-                   of generated samples. Across multiple tasks and models, we
-                   observe that coverage - the fraction of problems solved by
-                   any attempt - scales with the number of samples over four
-                   orders of magnitude. In domains like coding and formal
-                   proofs, where all answers can be automatically verified,
-                   these increases in coverage directly translate into improved
-                   performance. When we apply repeated sampling to SWE-bench
-                   Lite, the fraction of issues solved with
-                   DeepSeek-V2-Coder-Instruct increases from 15.9\% with one
-                   sample to 56\% with 250 samples, outperforming the
-                   single-attempt state-of-the-art of 43\% which uses more
-                   capable frontier models. Moreover, using current API pricing,
-                   amplifying the cheaper DeepSeek model with five samples is
-                   more cost-effective and solves more issues than paying a
-                   premium for one sample from GPT-4o or Claude 3.5 Sonnet.
-                   Interestingly, the relationship between coverage and the
-                   number of samples is often log-linear and can be modelled
-                   with an exponentiated power law, suggesting the existence of
-                   inference-time scaling laws. Finally, we find that
-                   identifying correct samples out of many generations remains
-                   an important direction for future research in domains without
-                   automatic verifiers. When solving math word problems from
-                   GSM8K and MATH, coverage with Llama-3 models grows to over
-                   95\% with 10,000 samples. However, common methods to pick
-                   correct solutions from a sample collection, such as majority
-                   voting or reward models, plateau beyond several hundred
-                   samples and fail to fully scale with the sample budget.",
-  month         =  "31~" # jul,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2407.21787",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Welleck2024-yr,
-  title         = "From decoding to meta-generation: Inference-time algorithms
-                   for large language models",
-  author        = "Welleck, Sean and Bertsch, Amanda and Finlayson, Matthew and
-                   Schoelkopf, Hailey and Xie, Alex and Neubig, Graham and
-                   Kulikov, Ilia and Harchaoui, Zaid",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "One of the most striking findings in modern research on large
-                   language models (LLMs) is that scaling up compute during
-                   training leads to better results. However, less attention has
-                   been given to the benefits of scaling compute during
-                   inference. This survey focuses on these inference-time
-                   approaches. We explore three areas under a unified
-                   mathematical formalism: token-level generation algorithms,
-                   meta-generation algorithms, and efficient generation.
-                   Token-level generation algorithms, often called decoding
-                   algorithms, operate by sampling a single token at a time or
-                   constructing a token-level search space and then selecting an
-                   output. These methods typically assume access to a language
-                   model's logits, next-token distributions, or probability
-                   scores. Meta-generation algorithms work on partial or full
-                   sequences, incorporating domain knowledge, enabling
-                   backtracking, and integrating external information. Efficient
-                   generation methods aim to reduce token costs and improve the
-                   speed of generation. Our survey unifies perspectives from
-                   three research communities: traditional natural language
-                   processing, modern LLMs, and machine learning systems.",
-  month         =  "24~" # jun,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2406.16838",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@INPROCEEDINGS{Brown2017-of,
-  title     = "Libratus: The superhuman {AI} for no-limit poker",
-  author    = "Brown, Noam and Sandholm, Tuomas",
-  booktitle = "Proceedings of the Twenty-Sixth International Joint Conference on
-               Artificial Intelligence",
-  publisher = "International Joint Conferences on Artificial Intelligence
-               Organization",
-  address   = "California",
-  abstract  = "No-limit Texas Hold'em is the most popular variant of poker in
-               the world. Heads-up no-limit Texas Hold'em is the main benchmark
-               challenge for AI in imperfect-information games. We present
-               Libratus, the first - and so far only - AI to defeat top human
-               professionals in that game. Libratus's architecture features
-               three main modules, each of which has new algorithms:
-               pre-computing a solution to an abstraction of the game which
-               provides a high-level blueprint for the strategy of the AI, a new
-               nested subgame-solving algorithm which repeatedly calculates a
-               more detailed strategy as play progresses, and a self-improving
-               module which augments the pre-computed blueprint over time.",
-  month     =  aug,
-  year      =  2017,
-  url       = "https://www.onlinecasinoground.nl/wp-content/uploads/2018/10/Libratus-super-human-no-limit-poker-Sandholm-Brown.pdf",
-  keywords  = "o1"
-}
-
-@MISC{UnknownUnknown-rm,
-  title        = "Generative Verifiers: Reward Modeling as Next-Token Prediction",
-  howpublished = "\url{https://arxiv.org/html/2408.15240v1}",
-  note         = "Accessed: 2024-11-6",
-  keywords     = "o1",
-  language     = "en"
-}
-
-@INPROCEEDINGS{Yoshida2024-bs,
-  title     = "{MAP’s} not dead yet: Uncovering true language model modes by
-               conditioning away degeneracy",
-  author    = "Yoshida, Davis and Goyal, Kartik and Gimpel, Kevin",
-  booktitle = "Proceedings of the 62nd Annual Meeting of the Association for
-               Computational Linguistics (Volume 1: Long Papers)",
-  publisher = "Association for Computational Linguistics",
-  address   = "Stroudsburg, PA, USA",
-  pages     = "16164--16215",
-  abstract  = "Davis Yoshida, Kartik Goyal, Kevin Gimpel. Proceedings of the
-               62nd Annual Meeting of the Association for Computational
-               Linguistics (Volume 1: Long Papers). 2024.",
-  year      =  2024,
-  url       = "https://aclanthology.org/2024.acl-long.855.pdf",
-  keywords  = "o1"
-}
-
-@ARTICLE{Gandhi2024-vs,
-  title         = "Stream of search ({SoS}): Learning to search in language",
-  author        = "Gandhi, Kanishk and Lee, Denise and Grand, Gabriel and Liu,
-                   Muxin and Cheng, Winson and Sharma, Archit and Goodman, Noah
-                   D",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Language models are rarely shown fruitful mistakes while
-                   training. They then struggle to look beyond the next token,
-                   suffering from a snowballing of errors and struggling to
-                   predict the consequence of their actions several steps ahead.
-                   In this paper, we show how language models can be taught to
-                   search by representing the process of search in language, as
-                   a flattened string -- a stream of search (SoS). We propose a
-                   unified language for search that captures an array of
-                   different symbolic search strategies. We demonstrate our
-                   approach using the simple yet difficult game of Countdown,
-                   where the goal is to combine input numbers with arithmetic
-                   operations to reach a target number. We pretrain a
-                   transformer-based language model from scratch on a dataset of
-                   streams of search generated by heuristic solvers. We find
-                   that SoS pretraining increases search accuracy by 25\% over
-                   models trained to predict only the optimal search trajectory.
-                   We further finetune this model with two policy improvement
-                   methods: Advantage-Induced Policy Alignment (APA) and
-                   Self-Taught Reasoner (STaR). The finetuned SoS models solve
-                   36\% of previously unsolved problems, including problems that
-                   cannot be solved by any of the heuristic solvers. Our results
-                   indicate that language models can learn to solve problems via
-                   search, self-improve to flexibly use different search
-                   strategies, and potentially discover new ones.",
-  month         =  "1~" # apr,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2404.03683",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Zelikman2024-cu,
-  title         = "Quiet-{STaR}: Language models can teach themselves to think
-                   before speaking",
-  author        = "Zelikman, Eric and Harik, Georges and Shao, Yijia and
-                   Jayasiri, Varuna and Haber, Nick and Goodman, Noah D",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "When writing and talking, people sometimes pause to think.
-                   Although reasoning-focused works have often framed reasoning
-                   as a method of answering questions or completing agentic
-                   tasks, reasoning is implicit in almost all written text. For
-                   example, this applies to the steps not stated between the
-                   lines of a proof or to the theory of mind underlying a
-                   conversation. In the Self-Taught Reasoner (STaR, Zelikman et
-                   al. 2022), useful thinking is learned by inferring rationales
-                   from few-shot examples in question-answering and learning
-                   from those that lead to a correct answer. This is a highly
-                   constrained setting -- ideally, a language model could
-                   instead learn to infer unstated rationales in arbitrary text.
-                   We present Quiet-STaR, a generalization of STaR in which LMs
-                   learn to generate rationales at each token to explain future
-                   text, improving their predictions. We address key challenges,
-                   including 1) the computational cost of generating
-                   continuations, 2) the fact that the LM does not initially
-                   know how to generate or use internal thoughts, and 3) the
-                   need to predict beyond individual next tokens. To resolve
-                   these, we propose a tokenwise parallel sampling algorithm,
-                   using learnable tokens indicating a thought's start and end,
-                   and an extended teacher-forcing technique. Encouragingly,
-                   generated rationales disproportionately help model
-                   difficult-to-predict tokens and improve the LM's ability to
-                   directly answer difficult questions. In particular, after
-                   continued pretraining of an LM on a corpus of internet text
-                   with Quiet-STaR, we find zero-shot improvements on GSM8K
-                   (5.9\%$\rightarrow$10.9\%) and CommonsenseQA
-                   (36.3\%$\rightarrow$47.2\%) and observe a perplexity
-                   improvement of difficult tokens in natural text. Crucially,
-                   these improvements require no fine-tuning on these tasks.
-                   Quiet-STaR marks a step towards LMs that can learn to reason
-                   in a more general and scalable way.",
-  month         =  "14~" # mar,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2403.09629",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Kazemnejad2024-cp,
-  title         = "{VinePPO}: Unlocking {RL} potential for {LLM} reasoning
-                   through refined credit assignment",
-  author        = "Kazemnejad, Amirhossein and Aghajohari, Milad and Portelance,
-                   Eva and Sordoni, Alessandro and Reddy, Siva and Courville,
-                   Aaron and Roux, Nicolas Le",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Large language models (LLMs) are increasingly applied to
-                   complex reasoning tasks that require executing several
-                   complex steps before receiving any reward. Properly assigning
-                   credit to these steps is essential for enhancing model
-                   performance. Proximal Policy Optimization (PPO), a
-                   state-of-the-art reinforcement learning (RL) algorithm used
-                   for LLM finetuning, employs value networks to tackle credit
-                   assignment. However, value networks face challenges in
-                   predicting the expected cumulative rewards accurately in
-                   complex reasoning tasks, often leading to high-variance
-                   updates and suboptimal performance. In this work, we
-                   systematically evaluate the efficacy of value networks and
-                   reveal their significant shortcomings in reasoning-heavy LLM
-                   tasks, showing that they barely outperform a random baseline
-                   when comparing alternative steps. To address this, we propose
-                   VinePPO, a straightforward approach that leverages the
-                   flexibility of language environments to compute unbiased
-                   Monte Carlo-based estimates, bypassing the need for large
-                   value networks. Our method consistently outperforms PPO and
-                   other RL-free baselines across MATH and GSM8K datasets with
-                   fewer gradient updates (up to 9x), less wall-clock time (up
-                   to 3.0x). These results emphasize the importance of accurate
-                   credit assignment in RL finetuning of LLM and demonstrate
-                   VinePPO's potential as a superior alternative.",
-  month         =  "2~" # oct,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2410.01679",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Zelikman2022-id,
-  title         = "{STaR}: Bootstrapping reasoning with reasoning",
-  author        = "Zelikman, Eric and Wu, Yuhuai and Mu, Jesse and Goodman, Noah
-                   D",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Generating step-by-step ``chain-of-thought'' rationales
-                   improves language model performance on complex reasoning
-                   tasks like mathematics or commonsense question-answering.
-                   However, inducing language model rationale generation
-                   currently requires either constructing massive rationale
-                   datasets or sacrificing accuracy by using only few-shot
-                   inference. We propose a technique to iteratively leverage a
-                   small number of rationale examples and a large dataset
-                   without rationales, to bootstrap the ability to perform
-                   successively more complex reasoning. This technique, the
-                   ``Self-Taught Reasoner'' (STaR), relies on a simple loop:
-                   generate rationales to answer many questions, prompted with a
-                   few rationale examples; if the generated answers are wrong,
-                   try again to generate a rationale given the correct answer;
-                   fine-tune on all the rationales that ultimately yielded
-                   correct answers; repeat. We show that STaR significantly
-                   improves performance on multiple datasets compared to a model
-                   fine-tuned to directly predict final answers, and performs
-                   comparably to fine-tuning a 30$\times$ larger
-                   state-of-the-art language model on CommensenseQA. Thus, STaR
-                   lets a model improve itself by learning from its own
-                   generated reasoning.",
-  month         =  "27~" # mar,
-  year          =  2022,
-  url           = "http://arxiv.org/abs/2203.14465",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Wu2024-mt,
-  title         = "Inference scaling laws: An empirical analysis of
-                   compute-optimal inference for problem-solving with language
-                   models",
-  author        = "Wu, Yangzhen and Sun, Zhiqing and Li, Shanda and Welleck,
-                   Sean and Yang, Yiming",
-  journal       = "arXiv [cs.AI]",
-  abstract      = "While the scaling laws of large language models (LLMs)
-                   training have been extensively studied, optimal inference
-                   configurations of LLMs remain underexplored. We study
-                   inference scaling laws and compute-optimal inference,
-                   focusing on the trade-offs between model sizes and generating
-                   additional tokens with different inference strategies. As a
-                   first step towards understanding and designing
-                   compute-optimal inference methods, we studied
-                   cost-performance trade-offs for inference strategies such as
-                   greedy search, majority voting, best-of-$n$, weighted voting,
-                   and two different tree search algorithms, using different
-                   model sizes and compute budgets. Our findings indicate
-                   smaller models (e.g., Llemma-7B) can outperform larger models
-                   given the same computation budgets, and that smaller models
-                   paired with advanced inference algorithms yield
-                   Pareto-optimal cost-performance trade-offs. For instance, the
-                   Llemma-7B model, equipped with our novel tree search
-                   algorithm, consistently outperforms Llemma-34B with standard
-                   majority voting on the MATH benchmark across all FLOPs
-                   budgets. We hope these findings contribute to a broader
-                   understanding of inference scaling laws for LLMs.",
-  month         =  "1~" # aug,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2408.00724",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  keywords      = "o1"
-}
-
-@ARTICLE{Uesato2022-aw,
-  title         = "Solving math word problems with process- and outcome-based
-                   feedback",
-  author        = "Uesato, Jonathan and Kushman, Nate and Kumar, Ramana and
-                   Song, Francis and Siegel, Noah and Wang, Lisa and Creswell,
-                   Antonia and Irving, Geoffrey and Higgins, Irina",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Recent work has shown that asking language models to generate
-                   reasoning steps improves performance on many reasoning tasks.
-                   When moving beyond prompting, this raises the question of how
-                   we should supervise such models: outcome-based approaches
-                   which supervise the final result, or process-based approaches
-                   which supervise the reasoning process itself? Differences
-                   between these approaches might naturally be expected not just
-                   in final-answer errors but also in reasoning errors, which
-                   can be difficult to detect and are problematic in many
-                   real-world domains such as education. We run the first
-                   comprehensive comparison between process- and outcome-based
-                   approaches trained on a natural language task, GSM8K. We find
-                   that pure outcome-based supervision produces similar
-                   final-answer error rates with less label supervision.
-                   However, for correct reasoning steps we find it necessary to
-                   use process-based supervision or supervision from learned
-                   reward models that emulate process-based feedback. In total,
-                   we improve the previous best results from 16.8\% $\to$ 12.7\%
-                   final-answer error and 14.0\% $\to$ 3.4\% reasoning error
-                   among final-answer-correct solutions.",
-  month         =  "25~" # nov,
-  year          =  2022,
-  url           = "http://arxiv.org/abs/2211.14275",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Cobbe2021-gt,
-  title         = "Training verifiers to solve math word problems",
-  author        = "Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and
-                   Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert,
-                   Matthias and Tworek, Jerry and Hilton, Jacob and Nakano,
-                   Reiichiro and Hesse, Christopher and Schulman, John",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "State-of-the-art language models can match human performance
-                   on many tasks, but they still struggle to robustly perform
-                   multi-step mathematical reasoning. To diagnose the failures
-                   of current models and support research, we introduce GSM8K, a
-                   dataset of 8.5K high quality linguistically diverse grade
-                   school math word problems. We find that even the largest
-                   transformer models fail to achieve high test performance,
-                   despite the conceptual simplicity of this problem
-                   distribution. To increase performance, we propose training
-                   verifiers to judge the correctness of model completions. At
-                   test time, we generate many candidate solutions and select
-                   the one ranked highest by the verifier. We demonstrate that
-                   verification significantly improves performance on GSM8K, and
-                   we provide strong empirical evidence that verification scales
-                   more effectively with increased data than a finetuning
-                   baseline.",
-  month         =  "27~" # oct,
-  year          =  2021,
-  url           = "http://arxiv.org/abs/2110.14168",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Kumar2024-fj,
-  title         = "Training language models to self-correct via reinforcement
-                   learning",
-  author        = "Kumar, Aviral and Zhuang, Vincent and Agarwal, Rishabh and
-                   Su, Yi and Co-Reyes, John D and Singh, Avi and Baumli, Kate
-                   and Iqbal, Shariq and Bishop, Colton and Roelofs, Rebecca and
-                   Zhang, Lei M and McKinney, Kay and Shrivastava, Disha and
-                   Paduraru, Cosmin and Tucker, George and Precup, Doina and
-                   Behbahani, Feryal and Faust, Aleksandra",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Self-correction is a highly desirable capability of large
-                   language models (LLMs), yet it has consistently been found to
-                   be largely ineffective in modern LLMs. Current methods for
-                   training self-correction typically depend on either multiple
-                   models, a more advanced model, or additional forms of
-                   supervision. To address these shortcomings, we develop a
-                   multi-turn online reinforcement learning (RL) approach,
-                   SCoRe, that significantly improves an LLM's self-correction
-                   ability using entirely self-generated data. To build SCoRe,
-                   we first show that variants of supervised fine-tuning (SFT)
-                   on offline model-generated correction traces are often
-                   insufficient for instilling self-correction behavior. In
-                   particular, we observe that training via SFT falls prey to
-                   either a distribution mismatch between mistakes made by the
-                   data-collection policy and the model's own responses, or to
-                   behavior collapse, where learning implicitly prefers only a
-                   certain mode of correction behavior that is often not
-                   effective at self-correction on test problems. SCoRe
-                   addresses these challenges by training under the model's own
-                   distribution of self-generated correction traces and using
-                   appropriate regularization to steer the learning process into
-                   learning a self-correction behavior that is effective at test
-                   time as opposed to fitting high-reward responses for a given
-                   prompt. This regularization process includes an initial phase
-                   of multi-turn RL on a base model to generate a policy
-                   initialization that is less susceptible to collapse, followed
-                   by using a reward bonus to amplify self-correction. With
-                   Gemini 1.0 Pro and 1.5 Flash models, we find that SCoRe
-                   achieves state-of-the-art self-correction performance,
-                   improving the base models' self-correction by 15.6\% and
-                   9.1\% respectively on MATH and HumanEval.",
-  month         =  "19~" # sep,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2409.12917",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Wu2024-px,
-  title         = "Thinking {LLMs}: General instruction following with thought
-                   generation",
-  author        = "Wu, Tianhao and Lan, Janice and Yuan, Weizhe and Jiao,
-                   Jiantao and Weston, Jason and Sukhbaatar, Sainbayar",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "LLMs are typically trained to answer user questions or follow
-                   instructions similarly to how human experts respond. However,
-                   in the standard alignment framework they lack the basic
-                   ability of explicit thinking before answering. Thinking is
-                   important for complex questions that require reasoning and
-                   planning -- but can be applied to any task. We propose a
-                   training method for equipping existing LLMs with such
-                   thinking abilities for general instruction following without
-                   use of additional human data. We achieve this by an iterative
-                   search and optimization procedure that explores the space of
-                   possible thought generations, allowing the model to learn how
-                   to think without direct supervision. For each instruction,
-                   the thought candidates are scored using a judge model to
-                   evaluate their responses only, and then optimized via
-                   preference optimization. We show that this procedure leads to
-                   superior performance on AlpacaEval and Arena-Hard, and shows
-                   gains from thinking on non-reasoning categories such as
-                   marketing, health and general knowledge, in addition to more
-                   traditional reasoning \& problem-solving tasks.",
-  month         =  "14~" # oct,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2410.10630",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Kirchner2024-cu,
-  title         = "Prover-Verifier Games improve legibility of {LLM} outputs",
-  author        = "Kirchner, Jan Hendrik and Chen, Yining and Edwards, Harri and
-                   Leike, Jan and McAleese, Nat and Burda, Yuri",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "One way to increase confidence in the outputs of Large
-                   Language Models (LLMs) is to support them with reasoning that
-                   is clear and easy to check -- a property we call legibility.
-                   We study legibility in the context of solving grade-school
-                   math problems and show that optimizing chain-of-thought
-                   solutions only for answer correctness can make them less
-                   legible. To mitigate the loss in legibility, we propose a
-                   training algorithm inspired by Prover-Verifier Game from Anil
-                   et al. (2021). Our algorithm iteratively trains small
-                   verifiers to predict solution correctness, ``helpful''
-                   provers to produce correct solutions that the verifier
-                   accepts, and ``sneaky'' provers to produce incorrect
-                   solutions that fool the verifier. We find that the helpful
-                   prover's accuracy and the verifier's robustness to
-                   adversarial attacks increase over the course of training.
-                   Furthermore, we show that legibility training transfers to
-                   time-constrained humans tasked with verifying solution
-                   correctness. Over course of LLM training human accuracy
-                   increases when checking the helpful prover's solutions, and
-                   decreases when checking the sneaky prover's solutions. Hence,
-                   training for checkability by small verifiers is a plausible
-                   technique for increasing output legibility. Our results
-                   suggest legibility training against small verifiers as a
-                   practical avenue for increasing legibility of large LLMs to
-                   humans, and thus could help with alignment of superhuman
-                   models.",
-  month         =  "18~" # jul,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2407.13692",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Lightman2023-cr,
-  title         = "Let's verify step by step",
-  author        = "Lightman, Hunter and Kosaraju, Vineet and Burda, Yura and
-                   Edwards, Harri and Baker, Bowen and Lee, Teddy and Leike, Jan
-                   and Schulman, John and Sutskever, Ilya and Cobbe, Karl",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "In recent years, large language models have greatly improved
-                   in their ability to perform complex multi-step reasoning.
-                   However, even state-of-the-art models still regularly produce
-                   logical mistakes. To train more reliable models, we can turn
-                   either to outcome supervision, which provides feedback for a
-                   final result, or process supervision, which provides feedback
-                   for each intermediate reasoning step. Given the importance of
-                   training reliable models, and given the high cost of human
-                   feedback, it is important to carefully compare the both
-                   methods. Recent work has already begun this comparison, but
-                   many questions still remain. We conduct our own
-                   investigation, finding that process supervision significantly
-                   outperforms outcome supervision for training models to solve
-                   problems from the challenging MATH dataset. Our
-                   process-supervised model solves 78\% of problems from a
-                   representative subset of the MATH test set. Additionally, we
-                   show that active learning significantly improves the efficacy
-                   of process supervision. To support related research, we also
-                   release PRM800K, the complete dataset of 800,000 step-level
-                   human feedback labels used to train our best reward model.",
-  month         =  "31~" # may,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2305.20050",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Snell2024-dx,
-  title         = "Scaling {LLM} test-time compute optimally can be more
-                   effective than scaling model parameters",
-  author        = "Snell, Charlie and Lee, Jaehoon and Xu, Kelvin and Kumar,
-                   Aviral",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Enabling LLMs to improve their outputs by using more
-                   test-time computation is a critical step towards building
-                   generally self-improving agents that can operate on
-                   open-ended natural language. In this paper, we study the
-                   scaling of inference-time computation in LLMs, with a focus
-                   on answering the question: if an LLM is allowed to use a
-                   fixed but non-trivial amount of inference-time compute, how
-                   much can it improve its performance on a challenging prompt?
-                   Answering this question has implications not only on the
-                   achievable performance of LLMs, but also on the future of LLM
-                   pretraining and how one should tradeoff inference-time and
-                   pre-training compute. Despite its importance, little research
-                   attempted to understand the scaling behaviors of various
-                   test-time inference methods. Moreover, current work largely
-                   provides negative results for a number of these strategies.
-                   In this work, we analyze two primary mechanisms to scale
-                   test-time computation: (1) searching against dense,
-                   process-based verifier reward models; and (2) updating the
-                   model's distribution over a response adaptively, given the
-                   prompt at test time. We find that in both cases, the
-                   effectiveness of different approaches to scaling test-time
-                   compute critically varies depending on the difficulty of the
-                   prompt. This observation motivates applying a
-                   ``compute-optimal'' scaling strategy, which acts to most
-                   effectively allocate test-time compute adaptively per prompt.
-                   Using this compute-optimal strategy, we can improve the
-                   efficiency of test-time compute scaling by more than 4x
-                   compared to a best-of-N baseline. Additionally, in a
-                   FLOPs-matched evaluation, we find that on problems where a
-                   smaller base model attains somewhat non-trivial success
-                   rates, test-time compute can be used to outperform a 14x
-                   larger model.",
-  month         =  "6~" # aug,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2408.03314",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Wang2024-xv,
-  title         = "Mixture-of-agents enhances large language model capabilities",
-  author        = "Wang, Junlin and Wang, Jue and Athiwaratkun, Ben and Zhang,
-                   Ce and Zou, James",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Recent advances in large language models (LLMs) demonstrate
-                   substantial capabilities in natural language understanding
-                   and generation tasks. With the growing number of LLMs, how to
-                   harness the collective expertise of multiple LLMs is an
-                   exciting open direction. Toward this goal, we propose a new
-                   approach that leverages the collective strengths of multiple
-                   LLMs through a Mixture-of-Agents (MoA) methodology. In our
-                   approach, we construct a layered MoA architecture wherein
-                   each layer comprises multiple LLM agents. Each agent takes
-                   all the outputs from agents in the previous layer as
-                   auxiliary information in generating its response. MoA models
-                   achieves state-of-art performance on AlpacaEval 2.0, MT-Bench
-                   and FLASK, surpassing GPT-4 Omni. For example, our MoA using
-                   only open-source LLMs is the leader of AlpacaEval 2.0 by a
-                   substantial gap, achieving a score of 65.1\% compared to
-                   57.5\% by GPT-4 Omni.",
-  month         =  "7~" # jun,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2406.04692",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Nakano2021-iz,
-  title         = "{WebGPT}: Browser-assisted question-answering with human
-                   feedback",
-  author        = "Nakano, Reiichiro and Hilton, Jacob and Balaji, Suchir and
-                   Wu, Jeff and Ouyang, Long and Kim, Christina and Hesse,
-                   Christopher and Jain, Shantanu and Kosaraju, Vineet and
-                   Saunders, William and Jiang, Xu and Cobbe, Karl and Eloundou,
-                   Tyna and Krueger, Gretchen and Button, Kevin and Knight,
-                   Matthew and Chess, Benjamin and Schulman, John",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "We fine-tune GPT-3 to answer long-form questions using a
-                   text-based web-browsing environment, which allows the model
-                   to search and navigate the web. By setting up the task so
-                   that it can be performed by humans, we are able to train
-                   models on the task using imitation learning, and then
-                   optimize answer quality with human feedback. To make human
-                   evaluation of factual accuracy easier, models must collect
-                   references while browsing in support of their answers. We
-                   train and evaluate our models on ELI5, a dataset of questions
-                   asked by Reddit users. Our best model is obtained by
-                   fine-tuning GPT-3 using behavior cloning, and then performing
-                   rejection sampling against a reward model trained to predict
-                   human preferences. This model's answers are preferred by
-                   humans 56\% of the time to those of our human demonstrators,
-                   and 69\% of the time to the highest-voted answer from Reddit.",
-  month         =  "17~" # dec,
-  year          =  2021,
-  url           = "http://arxiv.org/abs/2112.09332",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Gulcehre2023-vk,
-  title         = "Reinforced Self-training ({ReST}) for language modeling",
-  author        = "Gulcehre, Caglar and Paine, Tom Le and Srinivasan, Srivatsan
-                   and Konyushkova, Ksenia and Weerts, Lotte and Sharma,
-                   Abhishek and Siddhant, Aditya and Ahern, Alex and Wang,
-                   Miaosen and Gu, Chenjie and Macherey, Wolfgang and Doucet,
-                   Arnaud and Firat, Orhan and de Freitas, Nando",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Reinforcement learning from human feedback (RLHF) can improve
-                   the quality of large language model's (LLM) outputs by
-                   aligning them with human preferences. We propose a simple
-                   algorithm for aligning LLMs with human preferences inspired
-                   by growing batch reinforcement learning (RL), which we call
-                   Reinforced Self-Training (ReST). Given an initial LLM policy,
-                   ReST produces a dataset by generating samples from the
-                   policy, which are then used to improve the LLM policy using
-                   offline RL algorithms. ReST is more efficient than typical
-                   online RLHF methods because the training dataset is produced
-                   offline, which allows data reuse. While ReST is a general
-                   approach applicable to all generative learning settings, we
-                   focus on its application to machine translation. Our results
-                   show that ReST can substantially improve translation quality,
-                   as measured by automated metrics and human evaluation on
-                   machine translation benchmarks in a compute and
-                   sample-efficient manner.",
-  month         =  "17~" # aug,
-  year          =  2023,
-  url           = "https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=7hwJ2ckAAAAJ:evX43VCCuoAC",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Nye2021-bx,
-  title         = "Show your work: Scratchpads for intermediate computation with
-                   language models",
-  author        = "Nye, Maxwell and Andreassen, Anders Johan and Gur-Ari, Guy
-                   and Michalewski, Henryk and Austin, Jacob and Bieber, David
-                   and Dohan, David and Lewkowycz, Aitor and Bosma, Maarten and
-                   Luan, David and Sutton, Charles and Odena, Augustus",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Large pre-trained language models perform remarkably well on
-                   tasks that can be done ``in one pass'', such as generating
-                   realistic text or synthesizing computer programs. However,
-                   they struggle with tasks that require unbounded multi-step
-                   computation, such as adding integers or executing programs.
-                   Surprisingly, we find that these same models are able to
-                   perform complex multi-step computations -- even in the
-                   few-shot regime -- when asked to perform the operation ``step
-                   by step'', showing the results of intermediate computations.
-                   In particular, we train transformers to perform multi-step
-                   computations by asking them to emit intermediate computation
-                   steps into a ``scratchpad''. On a series of increasingly
-                   complex tasks ranging from long addition to the execution of
-                   arbitrary programs, we show that scratchpads dramatically
-                   improve the ability of language models to perform multi-step
-                   computations.",
-  month         =  "30~" # nov,
-  year          =  2021,
-  url           = "http://arxiv.org/abs/2112.00114",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Silver2017-bn,
-  title         = "Mastering chess and shogi by self-play with a general
-                   reinforcement learning algorithm",
-  author        = "Silver, David and Hubert, Thomas and Schrittwieser, Julian
-                   and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and
-                   Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and
-                   Graepel, Thore and Lillicrap, Timothy and Simonyan, Karen and
-                   Hassabis, Demis",
-  journal       = "arXiv [cs.AI]",
-  abstract      = "The game of chess is the most widely-studied domain in the
-                   history of artificial intelligence. The strongest programs
-                   are based on a combination of sophisticated search
-                   techniques, domain-specific adaptations, and handcrafted
-                   evaluation functions that have been refined by human experts
-                   over several decades. In contrast, the AlphaGo Zero program
-                   recently achieved superhuman performance in the game of Go,
-                   by tabula rasa reinforcement learning from games of
-                   self-play. In this paper, we generalise this approach into a
-                   single AlphaZero algorithm that can achieve, tabula rasa,
-                   superhuman performance in many challenging domains. Starting
-                   from random play, and given no domain knowledge except the
-                   game rules, AlphaZero achieved within 24 hours a superhuman
-                   level of play in the games of chess and shogi (Japanese
-                   chess) as well as Go, and convincingly defeated a
-                   world-champion program in each case.",
-  month         =  "5~" # dec,
-  year          =  2017,
-  url           = "http://arxiv.org/abs/1712.01815",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  keywords      = "o1"
-}
-
-@INPROCEEDINGS{Yarowsky1995-tm,
-  title     = "Unsupervised word sense disambiguation rivaling supervised
-               methods",
-  author    = "Yarowsky, David",
-  booktitle = "Proceedings of the 33rd annual meeting on Association for
-               Computational Linguistics -",
-  publisher = "Association for Computational Linguistics",
-  address   = "Morristown, NJ, USA",
-  abstract  = "This paper presents an unsupervised learning algorithm for sense
-               disambiguation that, when trained on unannotated English text,
-               rivals the performance of supervised techniques that require
-               time-consuming hand annotations. The algorithm is based on two
-               powerful constraints---that words tend to have one sense per
-               discourse and one sense per collocation---exploited in an
-               iterative bootstrapping procedure. Tested accuracy exceeds 96\%.",
-  year      =  1995,
-  url       = "https://dl.acm.org/doi/10.3115/981658.981684",
-  keywords  = "o1"
-}
-
-@ARTICLE{Yao2023-nw,
-  title         = "Tree of thoughts: Deliberate problem solving with large
-                   language models",
-  author        = "Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak
-                   and Griffiths, Thomas L and Cao, Yuan and Narasimhan, Karthik",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Language models are increasingly being deployed for general
-                   problem solving across a wide range of tasks, but are still
-                   confined to token-level, left-to-right decision-making
-                   processes during inference. This means they can fall short in
-                   tasks that require exploration, strategic lookahead, or where
-                   initial decisions play a pivotal role. To surmount these
-                   challenges, we introduce a new framework for language model
-                   inference, Tree of Thoughts (ToT), which generalizes over the
-                   popular Chain of Thought approach to prompting language
-                   models, and enables exploration over coherent units of text
-                   (thoughts) that serve as intermediate steps toward problem
-                   solving. ToT allows LMs to perform deliberate decision making
-                   by considering multiple different reasoning paths and
-                   self-evaluating choices to decide the next course of action,
-                   as well as looking ahead or backtracking when necessary to
-                   make global choices. Our experiments show that ToT
-                   significantly enhances language models' problem-solving
-                   abilities on three novel tasks requiring non-trivial planning
-                   or search: Game of 24, Creative Writing, and Mini Crosswords.
-                   For instance, in Game of 24, while GPT-4 with
-                   chain-of-thought prompting only solved 4\% of tasks, our
-                   method achieved a success rate of 74\%. Code repo with all
-                   prompts:
-                   https://github.com/princeton-nlp/tree-of-thought-llm.",
-  month         =  "17~" # may,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2305.10601",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Su2024-us,
-  title         = "Dualformer: Controllable fast and slow thinking by learning
-                   with randomized reasoning traces",
-  author        = "Su, Dijia and Sukhbaatar, Sainbayar and Rabbat, Michael and
-                   Tian, Yuandong and Zheng, Qinqing",
-  journal       = "arXiv [cs.AI]",
-  abstract      = "In human cognition theory, human thinking is governed by two
-                   systems: the fast and intuitive System 1 and the slower but
-                   more deliberative System 2. Recent studies have shown that
-                   incorporating System 2 process into Transformers including
-                   large language models (LLMs), significantly enhances their
-                   reasoning capabilities. Nevertheless, models that purely
-                   resemble System 2 thinking require substantially higher
-                   computational costs and are much slower to respond. To
-                   address this challenge, we present Dualformer, a single
-                   Transformer model that seamlessly integrates both the fast
-                   and slow reasoning modes. Dualformer is obtained by training
-                   on data with randomized reasoning traces, where different
-                   parts of the traces are dropped during training. The dropping
-                   strategies are specifically tailored according to the trace
-                   structure, analogous to analyzing our thinking process and
-                   creating shortcuts with patterns. At inference time, our
-                   model can be configured to output only the solutions (fast
-                   mode) or both the reasoning chain and the final solution
-                   (slow mode), or automatically decide which mode to engage
-                   (auto mode). In all cases, Dualformer outperforms the
-                   corresponding baseline models in both performance and
-                   computational efficiency: (1) in slow mode, Dualformer
-                   optimally solves unseen 30 x 30 maze navigation tasks 97.6\%
-                   of the time, surpassing the Searchformer (trained on data
-                   with complete reasoning traces) baseline performance of
-                   93.3\%, while only using 45.5\% fewer reasoning steps; (2) in
-                   fast mode, Dualformer completes those tasks with an 80\%
-                   optimal rate, significantly outperforming the Solution-Only
-                   model (trained on solution-only data), which has an optimal
-                   rate of only 30\%. For math problems, our techniques have
-                   also achieved improved performance with LLM fine-tuning,
-                   showing its generalization beyond task-specific models.",
-  month         =  "13~" # oct,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2410.09918",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  keywords      = "o1"
-}
-
-@ARTICLE{Anthony2017-dm,
-  title         = "Thinking fast and slow with deep learning and tree search",
-  author        = "Anthony, Thomas and Tian, Zheng and Barber, David",
-  journal       = "arXiv [cs.AI]",
-  abstract      = "Sequential decision making problems, such as structured
-                   prediction, robotic control, and game playing, require a
-                   combination of planning policies and generalisation of those
-                   plans. In this paper, we present Expert Iteration (ExIt), a
-                   novel reinforcement learning algorithm which decomposes the
-                   problem into separate planning and generalisation tasks.
-                   Planning new policies is performed by tree search, while a
-                   deep neural network generalises those plans. Subsequently,
-                   tree search is improved by using the neural network policy to
-                   guide search, increasing the strength of new plans. In
-                   contrast, standard deep Reinforcement Learning algorithms
-                   rely on a neural network not only to generalise plans, but to
-                   discover them too. We show that ExIt outperforms REINFORCE
-                   for training a neural network to play the board game Hex, and
-                   our final tree search agent, trained tabula rasa, defeats
-                   MoHex 1.0, the most recent Olympiad Champion player to be
-                   publicly released.",
-  month         =  "23~" # may,
-  year          =  2017,
-  url           = "http://arxiv.org/abs/1705.08439",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  keywords      = "o1"
-}
-
-@ARTICLE{Setlur2024-ax,
-  title         = "Rewarding progress: Scaling automated process verifiers for
-                   {LLM} reasoning",
-  author        = "Setlur, Amrith and Nagpal, Chirag and Fisch, Adam and Geng,
-                   Xinyang and Eisenstein, Jacob and Agarwal, Rishabh and
-                   Agarwal, Alekh and Berant, Jonathan and Kumar, Aviral",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "A promising approach for improving reasoning in large
-                   language models is to use process reward models (PRMs). PRMs
-                   provide feedback at each step of a multi-step reasoning
-                   trace, potentially improving credit assignment over outcome
-                   reward models (ORMs) that only provide feedback at the final
-                   step. However, collecting dense, per-step human labels is not
-                   scalable, and training PRMs from automatically-labeled data
-                   has thus far led to limited gains. To improve a base policy
-                   by running search against a PRM or using it as dense rewards
-                   for reinforcement learning (RL), we ask: ``How should we
-                   design process rewards?''. Our key insight is that, to be
-                   effective, the process reward for a step should measure
-                   progress: a change in the likelihood of producing a correct
-                   response in the future, before and after taking the step,
-                   corresponding to the notion of step-level advantages in RL.
-                   Crucially, this progress should be measured under a prover
-                   policy distinct from the base policy. We theoretically
-                   characterize the set of good provers and our results show
-                   that optimizing process rewards from such provers improves
-                   exploration during test-time search and online RL. In fact,
-                   our characterization shows that weak prover policies can
-                   substantially improve a stronger base policy, which we also
-                   observe empirically. We validate our claims by training
-                   process advantage verifiers (PAVs) to predict progress under
-                   such provers, and show that compared to ORMs, test-time
-                   search against PAVs is $>8\%$ more accurate, and
-                   $1.5-5\times$ more compute-efficient. Online RL with dense
-                   rewards from PAVs enables one of the first results with
-                   $5-6\times$ gain in sample efficiency, and $>6\%$ gain in
-                   accuracy, over ORMs.",
-  month         =  "10~" # oct,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2410.08146",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Chen2024-xg,
-  title         = "When is tree search useful for {LLM} planning? It depends on
-                   the discriminator",
-  author        = "Chen, Ziru and White, Michael and Mooney, Raymond and Payani,
-                   Ali and Su, Yu and Sun, Huan",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "In this paper, we examine how large language models (LLMs)
-                   solve multi-step problems under a language agent framework
-                   with three components: a generator, a discriminator, and a
-                   planning method. We investigate the practical utility of two
-                   advanced planning methods, iterative correction and tree
-                   search. We present a comprehensive analysis of how
-                   discrimination accuracy affects the overall performance of
-                   agents when using these two methods or a simpler method,
-                   re-ranking. Experiments on two tasks, text-to-SQL parsing and
-                   mathematical reasoning, show that: (1) advanced planning
-                   methods demand discriminators with at least 90\% accuracy to
-                   achieve significant improvements over re-ranking; (2) current
-                   LLMs' discrimination abilities have not met the needs of
-                   advanced planning methods to achieve such improvements; (3)
-                   with LLM-based discriminators, advanced planning methods may
-                   not adequately balance accuracy and efficiency. For example,
-                   compared to the other two methods, tree search is at least
-                   10--20 times slower but leads to negligible performance
-                   gains, which hinders its real-world applications. Code and
-                   data are available at
-                   https://github.com/OSU-NLP-Group/llm-planning-eval.",
-  month         =  "16~" # feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.10890",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Xie2023-ti,
-  title         = "Self-evaluation guided beam search for reasoning",
-  author        = "Xie, Yuxi and Kawaguchi, Kenji and Zhao, Yiran and Zhao, Xu
-                   and Kan, Min-Yen and He, Junxian and Xie, Qizhe",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "Breaking down a problem into intermediate steps has
-                   demonstrated impressive performance in Large Language Model
-                   (LLM) reasoning. However, the growth of the reasoning chain
-                   introduces uncertainty and error accumulation, making it
-                   challenging to elicit accurate final results. To tackle this
-                   challenge of uncertainty in multi-step reasoning, we
-                   introduce a stepwise self-evaluation mechanism to guide and
-                   calibrate the reasoning process of LLMs. We propose a
-                   decoding algorithm integrating the self-evaluation guidance
-                   via stochastic beam search. The self-evaluation guidance
-                   serves as a better-calibrated automatic criterion,
-                   facilitating an efficient search in the reasoning space and
-                   resulting in superior prediction quality. Stochastic beam
-                   search balances exploitation and exploration of the search
-                   space with temperature-controlled randomness. Our approach
-                   surpasses the corresponding Codex-backboned baselines in
-                   few-shot accuracy by $6.34\%$, $9.56\%$, and $5.46\%$ on the
-                   GSM8K, AQuA, and StrategyQA benchmarks, respectively.
-                   Experiment results with Llama-2 on arithmetic reasoning
-                   demonstrate the efficiency of our method in outperforming the
-                   baseline methods with comparable computational budgets.
-                   Further analysis in multi-step reasoning finds our
-                   self-evaluation guidance pinpoints logic failures and leads
-                   to higher consistency and robustness. Our code is publicly
-                   available at https://guideddecoding.github.io/.",
-  month         =  "30~" # apr,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2305.00633",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  keywords      = "o1"
-}
-
-@ARTICLE{Xie2024-lp,
-  title         = "Monte Carlo Tree Search boosts reasoning via iterative
-                   preference learning",
-  author        = "Xie, Yuxi and Goyal, Anirudh and Zheng, Wenyue and Kan,
-                   Min-Yen and Lillicrap, Timothy P and Kawaguchi, Kenji and
-                   Shieh, Michael",
-  journal       = "arXiv [cs.AI]",
-  abstract      = "We introduce an approach aimed at enhancing the reasoning
-                   capabilities of Large Language Models (LLMs) through an
-                   iterative preference learning process inspired by the
-                   successful strategy employed by AlphaZero. Our work leverages
-                   Monte Carlo Tree Search (MCTS) to iteratively collect
-                   preference data, utilizing its look-ahead ability to break
-                   down instance-level rewards into more granular step-level
-                   signals. To enhance consistency in intermediate steps, we
-                   combine outcome validation and stepwise self-evaluation,
-                   continually updating the quality assessment of newly
-                   generated data. The proposed algorithm employs Direct
-                   Preference Optimization (DPO) to update the LLM policy using
-                   this newly generated step-level preference data. Theoretical
-                   analysis reveals the importance of using on-policy sampled
-                   data for successful self-improving. Extensive evaluations on
-                   various arithmetic and commonsense reasoning tasks
-                   demonstrate remarkable performance improvements over existing
-                   models. For instance, our approach outperforms the Mistral-7B
-                   Supervised Fine-Tuning (SFT) baseline on GSM8K, MATH, and
-                   ARC-C, with substantial increases in accuracy to $81.8\%$
-                   (+$5.9\%$), $34.7\%$ (+$5.8\%$), and $76.4\%$ (+$15.8\%$),
-                   respectively. Additionally, our research delves into the
-                   training and inference compute tradeoff, providing insights
-                   into how our method effectively maximizes performance gains.
-                   Our code is publicly available at
-                   https://github.com/YuxiXie/MCTS-DPO.",
-  month         =  "1~" # may,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2405.00451",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  keywords      = "o1"
-}
-
-@ARTICLE{Zhao2024-jv,
-  title         = "Probabilistic inference in language models via twisted
-                   Sequential Monte Carlo",
-  author        = "Zhao, Stephen and Brekelmans, Rob and Makhzani, Alireza and
-                   Grosse, Roger",
-  journal       = "arXiv [cs.LG]",
-  abstract      = "Numerous capability and safety techniques of Large Language
-                   Models (LLMs), including RLHF, automated red-teaming, prompt
-                   engineering, and infilling, can be cast as sampling from an
-                   unnormalized target distribution defined by a given reward or
-                   potential function over the full sequence. In this work, we
-                   leverage the rich toolkit of Sequential Monte Carlo (SMC) for
-                   these probabilistic inference problems. In particular, we use
-                   learned twist functions to estimate the expected future value
-                   of the potential at each timestep, which enables us to focus
-                   inference-time computation on promising partial sequences. We
-                   propose a novel contrastive method for learning the twist
-                   functions, and establish connections with the rich literature
-                   of soft reinforcement learning. As a complementary
-                   application of our twisted SMC framework, we present methods
-                   for evaluating the accuracy of language model inference
-                   techniques using novel bidirectional SMC bounds on the log
-                   partition function. These bounds can be used to estimate the
-                   KL divergence between the inference and target distributions
-                   in both directions. We apply our inference evaluation
-                   techniques to show that twisted SMC is effective for sampling
-                   undesirable outputs from a pretrained model (a useful
-                   component of harmlessness training and automated
-                   red-teaming), generating reviews with varied sentiment, and
-                   performing infilling tasks.",
-  month         =  "26~" # apr,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2404.17546",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.LG",
-  keywords      = "o1"
-}
-
-@ARTICLE{Putta2024-yy,
-  title         = "Agent {Q}: Advanced reasoning and learning for autonomous
-                   {AI} agents",
-  author        = "Putta, Pranav and Mills, Edmund and Garg, Naman and Motwani,
-                   Sumeet and Finn, Chelsea and Garg, Divyansh and Rafailov,
-                   Rafael",
-  journal       = "arXiv [cs.AI]",
-  abstract      = "Large Language Models (LLMs) have shown remarkable
-                   capabilities in natural language tasks requiring complex
-                   reasoning, yet their application in agentic, multi-step
-                   reasoning within interactive environments remains a difficult
-                   challenge. Traditional supervised pre-training on static
-                   datasets falls short in enabling autonomous agent
-                   capabilities needed to perform complex decision-making in
-                   dynamic settings like web navigation. Previous attempts to
-                   bridge this ga-through supervised fine-tuning on curated
-                   expert demonstrations-often suffer from compounding errors
-                   and limited exploration data, resulting in sub-optimal policy
-                   outcomes. To overcome these challenges, we propose a
-                   framework that combines guided Monte Carlo Tree Search (MCTS)
-                   search with a self-critique mechanism and iterative
-                   fine-tuning on agent interactions using an off-policy variant
-                   of the Direct Preference Optimization (DPO) algorithm. Our
-                   method allows LLM agents to learn effectively from both
-                   successful and unsuccessful trajectories, thereby improving
-                   their generalization in complex, multi-step reasoning tasks.
-                   We validate our approach in the WebShop environment-a
-                   simulated e-commerce platform where it consistently
-                   outperforms behavior cloning and reinforced fine-tuning
-                   baseline, and beats average human performance when equipped
-                   with the capability to do online search. In real-world
-                   booking scenarios, our methodology boosts Llama-3 70B model's
-                   zero-shot performance from 18.6\% to 81.7\% success rate (a
-                   340\% relative increase) after a single day of data
-                   collection and further to 95.4\% with online search. We
-                   believe this represents a substantial leap forward in the
-                   capabilities of autonomous agents, paving the way for more
-                   sophisticated and reliable decision-making in real-world
-                   settings.",
-  month         =  "13~" # aug,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2408.07199",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.AI",
-  keywords      = "o1"
-}
-
-@INPROCEEDINGS{Unknown2024-ba,
-  title     = "Towards Learning to Reason at Pre-Training Scale",
-  booktitle = "The Thirteenth International Conference on Learning
-               Representations",
-  abstract  = "Prompting a Large Language Model (LLM) to output Chain-of-Thought
-               (CoT) reasoning improves performance on complex problem-solving
-               tasks. Further, several popular approaches exist to
-               ``self-improve`` the abilities of LLMs to use CoT on tasks where
-               supervised (question, answer) datasets are available. However, an
-               emerging line of work explores whether self-improvement is
-               possible without supervised datasets, instead utilizing the same
-               large, general-purpose text corpora as used during pre-training.
-               These pre-training datasets encompass large parts of human
-               knowledge and dwarf all finetuning datasets in size.
-               Self-improving CoT abilities on such general datasets could
-               enhance reasoning for any general-purpose text generation task,
-               and doing so at pre-training scale may unlock unprecedented
-               reasoning abilities. In this paper, we outline the path towards
-               self-improving CoT reasoning at pre-training scale and address
-               fundamental challenges in this direction. We start by framing
-               this as a reinforcement learning problem: given the first $n$
-               tokens from a large pre-training corpus, the model generates a
-               CoT and receives a reward based on how well the CoT helps predict
-               the following $m$ tokens. We then investigate a fundamental
-               question: What constitutes a suitable reward function for
-               learning to reason during general language modelling? We outline
-               the desirable qualities of such a reward function and empirically
-               demonstrate how different functions affect what reasoning is
-               learnt and where reasoning is rewarded. Using these insights, we
-               introduce a novel reward function called Reasoning Advantage (RA)
-               that facilitates self-improving CoT reasoning on free-form
-               question-answering (QA) data, where answers are unstructured and
-               difficult to verify. Equipped with a suitable reward function, we
-               explore the optimization of it on general-purpose text using
-               offline RL. Our analysis indicates that future work should
-               investigate more powerful optimisation algorithms, potentially
-               moving towards more online algorithms that better explore the
-               space of CoT generations.",
-  month     =  "4~" # oct,
-  year      =  2024,
-  url       = "https://openreview.net/pdf?id=BGnm7Lo8oW",
-  keywords  = "o1"
 }
