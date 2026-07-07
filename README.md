@@ -94,6 +94,7 @@ https://youtu.be/6PEJ96k1kiw
     retrain.
 -   **ReST-EM** ([Singh et al. 2023](#ref-Singh2023-eb)) Formalizes
     similar methods as EM for RL. Applies to reasoning.
+-   **Self-generated Verified CoT** ([Nori et al. 2024](#ref-Nori2024)) Use GPT-4 to generate CoTs for exam questions, keep those that match the correct answers, and use them for GPT-4 in-context learning.
 
 ## Can LLMs learn to plan?
 
@@ -320,3 +321,5 @@ Bootstrapping Reasoning with Reasoning.” *arXiv \[Cs.LG\]*.
 Zhao, Stephen, Rob Brekelmans, Alireza Makhzani, and Roger Grosse. 2024.
 “Probabilistic Inference in Language Models via Twisted Sequential Monte
 Carlo.” *arXiv \[Cs.LG\]*. <http://arxiv.org/abs/2404.17546>.
+
+Nori, Harsha, Naoto Usuyama, Nicholas King, Scott Mayer McKinney, Xavier Fernandes, Sheng Zhang and Eric Horvitz. 2024. “From Medprompt to o1: Exploration of Run-Time Strategies for Medical Challenge Problems and Beyond.”  *arXiv \[Cs.CL\]*. <https://arxiv.org/abs/2411.03590>
