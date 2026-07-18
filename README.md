@@ -120,6 +120,7 @@ https://youtu.be/6PEJ96k1kiw
 -   **Large Language Monkeys** ([B. Brown et al.
     2024](#ref-Brown2024-bs))
 -   **Inference Scaling** ([Y. Wu et al. 2024](#ref-Wu2024-mt))
+-   **FoT Scaling** ([Z. Bi et al. 2024](https://arxiv.org/abs/2412.09078))
 
 ------------------------------------------------------------------------
 
@@ -320,3 +321,7 @@ Bootstrapping Reasoning with Reasoning.” *arXiv \[Cs.LG\]*.
 Zhao, Stephen, Rob Brekelmans, Alireza Makhzani, and Roger Grosse. 2024.
 “Probabilistic Inference in Language Models via Twisted Sequential Monte
 Carlo.” *arXiv \[Cs.LG\]*. <http://arxiv.org/abs/2404.17546>.
+
+Zhenni Bi, Kai Han, Chuanjian Liu, Yehui Tang, and Yunhe Wang. 2024.
+“Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM 
+Reasoning.” *arXiv \[Cs.CL\]*. <https://arxiv.org/abs/2412.09078>.
